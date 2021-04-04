@@ -61,7 +61,9 @@ public class BankAccountsTest {
 		bankaccount.BankAddress().sendKeys("Madhura Nagar Ameerper Khammam");
 		bankaccount.AddButton().click();
 		bankaccount.Back().click();
-	}
+		HomePage page=new HomePage(driver);
+		page.Logout().click();
+		}
 
 	@AfterClass
 	public void teardown() {
