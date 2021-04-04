@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="URL" value="http://apps.qaplanet.in/erp/index.php"/>
+  <listeners>
+    <listener class-name="ITLISTENER.ListenersTest"/>
+  </listeners>
+  <test thread-count="5" name="Testsales(failed)">
+    <parameter name="PASSWORD" value="lab1"/>
+    <parameter name="USERNAME" value="qaplanet1"/>
+    <parameter name="URL" value="http://apps.qaplanet.in/erp/index.php"/>
+    <classes>
+      <class name="Testsales.Testsalestype">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="Closebrowser"/>
+          <include name="AddSalestype"/>
+        </methods>
+      </class> <!-- Testsales.Testsalestype -->
+    </classes>
+  </test> <!-- Testsales(failed) -->
+</suite> <!-- Failed suite [Suite] -->

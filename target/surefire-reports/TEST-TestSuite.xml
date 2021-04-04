@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="104.36" tests="23" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\C V VIVEK\.cache\selenium\chromedriver\win32\89.0.4389.23\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="E:\Selenium\MVNTSTNGpro\target\test-classes;E:\Selenium\MVNTSTNGpro\target\classes;C:\Users\C V VIVEK\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\C V VIVEK\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\C V VIVEK\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\C V VIVEK\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\C V VIVEK\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\C V VIVEK\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\C V VIVEK\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\C V VIVEK\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\C V VIVEK\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\C V VIVEK\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\C V VIVEK\.m2\repository\io\github\bonigarcia\webdrivermanager\4.3.1\webdrivermanager-4.3.1.jar;C:\Users\C V VIVEK\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\C V VIVEK\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\C V VIVEK\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\C V VIVEK\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\C V VIVEK\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\C V VIVEK\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.0\log4j-api-2.13.0.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.0\log4j-core-2.13.0.jar;C:\Users\C V VIVEK\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\C V VIVEK\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\C V VIVEK\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="org.apache.logging.log4j.assignedSequences" value="11148"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin"/>
+    <property name="sun.java.command" value="C:\Users\C V VIVEK\AppData\Local\Temp\surefire2738770927632663746\surefirebooter4800621497652348409.jar C:\Users\C V VIVEK\AppData\Local\Temp\surefire2738770927632663746 2021-04-04T12-53-03_868-jvmRun1 surefire13519770000971553123tmp surefire_014722807590465476157tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="E:\Selenium\MVNTSTNGpro\target\test-classes;E:\Selenium\MVNTSTNGpro\target\classes;C:\Users\C V VIVEK\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\C V VIVEK\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\C V VIVEK\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\C V VIVEK\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\C V VIVEK\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\C V VIVEK\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\C V VIVEK\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\C V VIVEK\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\C V VIVEK\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\C V VIVEK\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\C V VIVEK\.m2\repository\io\github\bonigarcia\webdrivermanager\4.3.1\webdrivermanager-4.3.1.jar;C:\Users\C V VIVEK\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\C V VIVEK\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\C V VIVEK\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\C V VIVEK\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\C V VIVEK\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\C V VIVEK\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.0\log4j-api-2.13.0.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.0\log4j-core-2.13.0.jar;C:\Users\C V VIVEK\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\C V VIVEK\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\C V VIVEK\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\C V VIVEK"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.8"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="E:\Selenium\MVNTSTNGpro"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\C V VIVEK\AppData\Local\Temp\surefire2738770927632663746\surefirebooter4800621497652348409.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.8+10-LTS"/>
+    <property name="user.name" value="C V VIVEK"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\C V VIVEK\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\CVVIVE~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.8"/>
+    <property name="user.dir" value="E:\Selenium\MVNTSTNGpro"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\MAVEN\apache-maven-3.6.3/bin;C:\Program Files\Java\jdk-11.0.8/bin;C:\Program Files\Java\jdk-11.0.8/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\GuptaEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DelphiEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\PBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\VBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DotNetHooking;;&quot;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_241\bin;&quot;;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Java\jdk-11.0.8\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-11.0.8\bin;C:\MAVEN\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\C V VIVEK\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\C V VIVEK\AppData\Local\Programs\Python\Python38\;C:\Users\C V VIVEK\AppData\Local\Microsoft\WindowsApps;C:\Users\C V VIVEK\AppData\Roaming\npm;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.8+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="Login[http://apps.qaplanet.in/erp/index.php](1)" classname="TestItemandInventory.InventorylocationsTest" time="4.546">
+    <system-out><![CDATA[The test method execution is started=Login
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 22623
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 04, 2021 12:53:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="AddInventoryLocation" classname="TestItemandInventory.InventorylocationsTest" time="2.76">
+    <system-out><![CDATA[The test method execution is successful=Login
+The test method execution is started=AddInventoryLocation
+]]></system-out>
+  </testcase>
+  <testcase name="login[http://apps.qaplanet.in/erp/index.php](1)" classname="TestItemandInventory.UnitofmeasureTest" time="2.859">
+    <system-out><![CDATA[The test method execution is successful=AddInventoryLocation
+The test method execution is started=login
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 8589
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 04, 2021 12:53:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="AddUnitofMeasure" classname="TestItemandInventory.UnitofmeasureTest" time="1.785">
+    <system-out><![CDATA[The test method execution is successful=login
+The test method execution is started=AddUnitofMeasure
+]]></system-out>
+  </testcase>
+  <testcase name="TestLogin[http://apps.qaplanet.in/erp/index.php](1)" classname="TestItemandInventory.InventoryTest" time="3.179">
+    <system-out><![CDATA[The test method execution is successful=AddUnitofMeasure
+The test method execution is started=TestLogin
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 42203
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 04, 2021 12:53:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TestAddInventoryLocation" classname="TestItemandInventory.InventoryTest" time="2.184">
+    <system-out><![CDATA[The test method execution is successful=TestLogin
+The test method execution is started=TestAddInventoryLocation
+]]></system-out>
+  </testcase>
+  <testcase name="TestAddUnitofMeasure" classname="TestItemandInventory.InventoryTest" time="1.785">
+    <system-out><![CDATA[The test method execution is successful=TestAddInventoryLocation
+The test method execution is started=TestAddUnitofMeasure
+]]></system-out>
+  </testcase>
+  <testcase name="login[http://apps.qaplanet.in/erp/index.php](1)" classname="TestItemandInventory.ItemsTest" time="2.765">
+    <system-out><![CDATA[The test method execution is successful=TestAddUnitofMeasure
+The test method execution is started=login
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 4341
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 04, 2021 12:53:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="AddItem" classname="TestItemandInventory.ItemsTest" time="8.872">
+    <system-out><![CDATA[The test method execution is successful=login
+The test method execution is started=AddItem
+]]></system-out>
+  </testcase>
+  <testcase name="Launchbrowser[http://apps.qaplanet.in/erp/index.php](1)" classname="Testsales.TestLogin" time="3.287">
+    <system-out><![CDATA[The test method execution is successful=AddItem
+This is onFinish method=[ResultMap map=[[TestResult name=AddUnitofMeasure status=SUCCESS method=UnitofmeasureTest.AddUnitofMeasure()[pri:2, instance:TestItemandInventory.UnitofmeasureTest@5ace1ed4] output={null}], [TestResult name=TestLogin status=SUCCESS method=InventoryTest.TestLogin(java.lang.String)[pri:1, instance:TestItemandInventory.InventoryTest@4e096385] output={null}], [TestResult name=login status=SUCCESS method=ItemsTest.login(java.lang.String)[pri:1, instance:TestItemandInventory.ItemsTest@649bec2e] output={null}], [TestResult name=AddInventoryLocation status=SUCCESS method=InventorylocationsTest.AddInventoryLocation()[pri:2, instance:TestItemandInventory.InventorylocationsTest@625732] output={null}], [TestResult name=login status=SUCCESS method=UnitofmeasureTest.login(java.lang.String)[pri:1, instance:TestItemandInventory.UnitofmeasureTest@5ace1ed4] output={null}], [TestResult name=Login status=SUCCESS method=InventorylocationsTest.Login(java.lang.String)[pri:1, instance:TestItemandInventory.InventorylocationsTest@625732] output={null}], [TestResult name=TestAddInventoryLocation status=SUCCESS method=InventoryTest.TestAddInventoryLocation()[pri:2, instance:TestItemandInventory.InventoryTest@4e096385] output={null}], [TestResult name=AddItem status=SUCCESS method=ItemsTest.AddItem()[pri:2, instance:TestItemandInventory.ItemsTest@649bec2e] output={null}], [TestResult name=TestAddUnitofMeasure status=SUCCESS method=InventoryTest.TestAddUnitofMeasure()[pri:4, instance:TestItemandInventory.InventoryTest@4e096385] output={null}]]]
+This is onFinish method=[ResultMap map=[]]
+The test method execution is started=Launchbrowser
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 3928
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 04, 2021 12:53:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Login[qaplanet1, lab1](1)" classname="Testsales.TestLogin" time="2.458">
+    <system-out><![CDATA[The test method execution is successful=Launchbrowser
+The test method execution is started=Login
+]]></system-out>
+  </testcase>
+  <testcase name="Logout" classname="Testsales.TestLogin" time="0.053">
+    <system-out><![CDATA[The test method execution is successful=Login
+The test method execution is started=Logout
+]]></system-out>
+  </testcase>
+  <testcase name="TestvalidateLogin[qaplanet1, lab1](1)" classname="TestLogin.CredentialsTest" time="3.578">
+    <system-out><![CDATA[The test method execution is successful=Logout
+The test method execution is started=TestvalidateLogin
+Invalid credentials
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 33830
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 04, 2021 12:53:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TestvalidateLogin[qaplanet, lab1](2)" classname="TestLogin.CredentialsTest" time="1.566">
+    <system-out><![CDATA[The test method execution is successful=TestvalidateLogin
+The test method execution is started=TestvalidateLogin
+Invalid credentials
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 14778
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 04, 2021 12:53:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TestvalidateLogin[qaplanet1, lab](3)" classname="TestLogin.CredentialsTest" time="2.805">
+    <system-out><![CDATA[The test method execution is successful=TestvalidateLogin
+The test method execution is started=TestvalidateLogin
+Invalid credentials
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 36200
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 04, 2021 12:53:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Login[http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1](1)" classname="Testsales.Testsalestype" time="8.073">
+    <system-out><![CDATA[The test method execution is successful=TestvalidateLogin
+The test method execution is started=Login
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 2210
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 04, 2021 12:54:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="AddSalestype" classname="Testsales.Testsalestype" time="1.239">
+    <system-out><![CDATA[The test method execution is successful=Login
+The test method execution is started=AddSalestype
+]]></system-out>
+  </testcase>
+  <testcase name="Login[http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1](1)" classname="Testsales.Testsalesgroup" time="13.68">
+    <system-out><![CDATA[The test method execution is successful=AddSalestype
+The test method execution is started=Login
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 29731
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 04, 2021 12:54:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="AddSalesgroup[http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1](1)" classname="Testsales.Testsalesgroup" time="9.225">
+    <system-out><![CDATA[The test method execution is successful=Login
+The test method execution is started=AddSalesgroup
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 11071
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 04, 2021 12:54:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Login[http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1](1)" classname="Testsales.Testsalesperson" time="2.481">
+    <system-out><![CDATA[The test method execution is successful=AddSalesgroup
+The test method execution is started=Login
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 38801
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 04, 2021 12:54:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="AddSalesperson" classname="Testsales.Testsalesperson" time="2.419">
+    <system-out><![CDATA[The test method execution is successful=Login
+The test method execution is started=AddSalesperson
+]]></system-out>
+  </testcase>
+  <testcase name="login" classname="BankingandLedger.BankAccountsTest" time="3.739">
+    <system-out><![CDATA[The test method execution is successful=AddSalesperson
+This is onFinish method=[ResultMap map=[[TestResult name=Logout status=SUCCESS method=TestLogin.Logout()[pri:3, instance:Testsales.TestLogin@383bfa16] output={null}], [TestResult name=AddSalestype status=SUCCESS method=Testsalestype.AddSalestype()[pri:2, instance:Testsales.Testsalestype@53fdffa1] output={null}], [TestResult name=TestvalidateLogin status=SUCCESS method=CredentialsTest.TestvalidateLogin(java.lang.String,java.lang.String)[pri:0, instance:TestLogin.CredentialsTest@4d465b11] output={null}], [TestResult name=Login status=SUCCESS method=Testsalesperson.Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalesperson@32ee6fee] output={null}], [TestResult name=Launchbrowser status=SUCCESS method=TestLogin.Launchbrowser(java.lang.String)[pri:1, instance:Testsales.TestLogin@383bfa16] output={null}], [TestResult name=Login status=SUCCESS method=Testsalesgroup.Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalesgroup@5562c41e] output={null}], [TestResult name=Login status=SUCCESS method=TestLogin.Login(java.lang.String,java.lang.String)[pri:2, instance:Testsales.TestLogin@383bfa16] output={null}], [TestResult name=AddSalesgroup status=SUCCESS method=Testsalesgroup.AddSalesgroup(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:Testsales.Testsalesgroup@5562c41e] output={null}], [TestResult name=Login status=SUCCESS method=Testsalestype.Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalestype@53fdffa1] output={null}], [TestResult name=AddSalesperson status=SUCCESS method=Testsalesperson.AddSalesperson()[pri:2, instance:Testsales.Testsalesperson@32ee6fee] output={null}], [TestResult name=TestvalidateLogin status=SUCCESS method=CredentialsTest.TestvalidateLogin(java.lang.String,java.lang.String)[pri:0, instance:TestLogin.CredentialsTest@4d465b11] output={null}], [TestResult name=TestvalidateLogin status=SUCCESS method=CredentialsTest.TestvalidateLogin(java.lang.String,java.lang.String)[pri:0, instance:TestLogin.CredentialsTest@4d465b11] output={null}]]]
+This is onFinish method=[ResultMap map=[]]
+The test method execution is started=login
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 25375
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 04, 2021 12:54:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="AddBankAccounts" classname="BankingandLedger.BankAccountsTest" time="1.958">
+    <system-out><![CDATA[The test method execution is successful=login
+The test method execution is started=AddBankAccounts
+]]></system-out>
+  </testcase>
+</testsuite>
