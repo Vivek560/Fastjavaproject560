@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-03T23:54:10 IST" name="Default suite" finished-at="2021-04-03T23:54:31 IST" duration-ms="21167">
+  <suite started-at="2021-04-05T13:34:20 IST" name="Default suite" finished-at="2021-04-05T13:34:43 IST" duration-ms="22373">
     <groups>
     </groups>
-    <test started-at="2021-04-03T23:54:10 IST" name="Default test" finished-at="2021-04-03T23:54:31 IST" duration-ms="21167">
+    <test started-at="2021-04-05T13:34:20 IST" name="Default test" finished-at="2021-04-05T13:34:43 IST" duration-ms="22373">
       <class name="TestItemandInventory.AutoITTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:TestItemandInventory.AutoITTest@63a12c68]" started-at="2021-04-03T23:54:10 IST" name="Setup" finished-at="2021-04-03T23:54:13 IST" duration-ms="2723" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestItemandInventory.AutoITTest@63a12c68]" started-at="2021-04-05T13:34:20 IST" name="Setup" finished-at="2021-04-05T13:34:23 IST" duration-ms="2431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="login()[pri:1, instance:TestItemandInventory.AutoITTest@63a12c68]" started-at="2021-04-03T23:54:13 IST" name="login" finished-at="2021-04-03T23:54:16 IST" duration-ms="2611" status="PASS">
+        <test-method signature="login()[pri:1, instance:TestItemandInventory.AutoITTest@63a12c68]" started-at="2021-04-05T13:34:23 IST" name="login" finished-at="2021-04-05T13:34:27 IST" duration-ms="3898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="AddItem()[pri:2, instance:TestItemandInventory.AutoITTest@63a12c68]" started-at="2021-04-03T23:54:16 IST" name="AddItem" finished-at="2021-04-03T23:54:31 IST" duration-ms="15661" status="PASS">
+        <test-method signature="AddItem()[pri:2, instance:TestItemandInventory.AutoITTest@63a12c68]" started-at="2021-04-05T13:34:27 IST" name="AddItem" finished-at="2021-04-05T13:34:42 IST" duration-ms="15854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddItem -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestItemandInventory.AutoITTest@63a12c68]" started-at="2021-04-03T23:54:31 IST" name="teardown" finished-at="2021-04-03T23:54:31 IST" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestItemandInventory.AutoITTest@63a12c68]" started-at="2021-04-05T13:34:42 IST" name="teardown" finished-at="2021-04-05T13:34:43 IST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
