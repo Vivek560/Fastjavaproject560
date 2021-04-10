@@ -15,6 +15,7 @@ public class HomePage {
 	private By bankingandLedgerlink = By.linkText("Banking and General Ledger");
 	private By sales = By.linkText("Sales");
 	private By itemsandinventory=By.linkText("Items and Inventory");
+	private By unitsofmeasures=By.linkText("Units of Measure");
 	private By bankaccount=new By.ByLinkText("Bank Accounts");
 	private By salestype = By.linkText("Sales Types");
 	private By logout = By.linkText("Logout");
@@ -25,6 +26,10 @@ public class HomePage {
 	
 	public WebElement ItemsandInventory() {
 		return driver.findElement(itemsandinventory);
+	}
+	
+	public WebElement UnitsofMeasures() {
+		return driver.findElement(unitsofmeasures);
 	}
 	
 	public WebElement BankandLedgerLink() {

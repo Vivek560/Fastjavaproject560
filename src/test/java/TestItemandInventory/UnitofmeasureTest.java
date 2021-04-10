@@ -3,9 +3,7 @@ package TestItemandInventory;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
@@ -14,6 +12,10 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageobjects.HomePage;
+import pageobjects.LoginPage;
+import pageobjects.LogoutPage;
+import pageobjects.UnitsMeasurePage;
 
 public class UnitofmeasureTest {
 
@@ -39,29 +41,39 @@ public class UnitofmeasureTest {
 		else {
 			log.error("Title is not matching");
 		}
-		driver.findElement(By.xpath("//*[@name='user_name_entry_field']")).sendKeys("qaplanet1");
+		
+		LoginPage login=new LoginPage(driver);
+		login.Username().sendKeys("qaplanet1");
 		log.debug("The username is entered Successfully");
-		driver.findElement(By.xpath("//*[@name='password']")).sendKeys("lab1");
+		login.Password().sendKeys("lab1");
 		log.debug("The password is entered Successfully");
-		driver.findElement(By.xpath("//*[@name='SubmitUser']")).click();
+		login.Login().click();
 		log.debug("Login is Successfully");
 	}
 
 	@Test(priority=2)
 	public void AddUnitofMeasure() {
-		driver.findElement(By.linkText("Items and Inventory")).click();
+		
+		HomePage homepage=new HomePage(driver);
+		homepage.ItemsandInventory().click();
 		log.debug("Items and Inventory is clicked");
-		driver.findElement(By.linkText("Units of Measure")).click();
+		homepage.UnitsofMeasures().click();
 		log.debug("Units of Measure is clicked");
-		driver.findElement(By.xpath("//*[@name='abbr']")).sendKeys("MM");
+		UnitsMeasurePage units=new UnitsMeasurePage(driver);
+		units.Unitabbrevationfield().sendKeys("MM");
 		log.debug("Entered the measures");
-		driver.findElement(By.xpath("//*[@name='description']")).sendKeys("Milli meter");
-		WebElement Decimal=driver.findElement(By.xpath("//*[@name='decimals']"));
-		Select Decimaldropdown=new Select(Decimal);
+		units.Description().sendKeys("Milli meter");
+		Select Decimaldropdown=new Select(units.Decimals());
 		Decimaldropdown.selectByValue("1");
-		driver.findElement(By.xpath("//*[span='Add new']")).click();
-		driver.findElement(By.linkText("Back")).click();
-		driver.findElement(By.linkText("Logout")).click();
+		units.AddNewButton().click();
+		units.Back().click();
+		
+	}
+	
+	@Test(priority=3)
+	public void Logout() {
+		LogoutPage logout=new LogoutPage(driver);
+		logout.Logout().click();
 	}
 	
 	@AfterClass

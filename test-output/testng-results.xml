@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-05T13:34:20 IST" name="Default suite" finished-at="2021-04-05T13:34:43 IST" duration-ms="22373">
+  <suite started-at="2021-04-10T13:06:49 IST" name="Default suite" finished-at="2021-04-10T13:07:00 IST" duration-ms="10652">
     <groups>
     </groups>
-    <test started-at="2021-04-05T13:34:20 IST" name="Default test" finished-at="2021-04-05T13:34:43 IST" duration-ms="22373">
-      <class name="TestItemandInventory.AutoITTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:TestItemandInventory.AutoITTest@63a12c68]" started-at="2021-04-05T13:34:20 IST" name="Setup" finished-at="2021-04-05T13:34:23 IST" duration-ms="2431" status="PASS">
+    <test started-at="2021-04-10T13:06:49 IST" name="Default test" finished-at="2021-04-10T13:07:00 IST" duration-ms="10652">
+      <class name="TestItemandInventory.UnitofmeasureTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestItemandInventory.UnitofmeasureTest@63a12c68]" started-at="2021-04-10T13:06:49 IST" name="setup" finished-at="2021-04-10T13:06:52 IST" duration-ms="3132" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="login()[pri:1, instance:TestItemandInventory.AutoITTest@63a12c68]" started-at="2021-04-05T13:34:23 IST" name="login" finished-at="2021-04-05T13:34:27 IST" duration-ms="3898" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:1, instance:TestItemandInventory.UnitofmeasureTest@63a12c68]" started-at="2021-04-10T13:06:52 IST" name="login" finished-at="2021-04-10T13:06:58 IST" duration-ms="5263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="AddItem()[pri:2, instance:TestItemandInventory.AutoITTest@63a12c68]" started-at="2021-04-05T13:34:27 IST" name="AddItem" finished-at="2021-04-05T13:34:42 IST" duration-ms="15854" status="PASS">
+        <test-method signature="AddUnitofMeasure()[pri:2, instance:TestItemandInventory.UnitofmeasureTest@63a12c68]" started-at="2021-04-10T13:06:58 IST" name="AddUnitofMeasure" finished-at="2021-04-10T13:07:00 IST" duration-ms="2035" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddItem -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestItemandInventory.AutoITTest@63a12c68]" started-at="2021-04-05T13:34:42 IST" name="teardown" finished-at="2021-04-05T13:34:43 IST" duration-ms="105" status="PASS">
+        </test-method> <!-- AddUnitofMeasure -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestItemandInventory.UnitofmeasureTest@63a12c68]" started-at="2021-04-10T13:07:00 IST" name="teardown" finished-at="2021-04-10T13:07:00 IST" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- TestItemandInventory.AutoITTest -->
+      </class> <!-- TestItemandInventory.UnitofmeasureTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
