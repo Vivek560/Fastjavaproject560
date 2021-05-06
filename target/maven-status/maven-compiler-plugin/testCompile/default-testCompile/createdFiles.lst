@@ -5,6 +5,7 @@ Testsales\Testsalestype.class
 TestItemandInventory\ItemsTest.class
 TestItemandInventory\InventoryTest.class
 Testsales\TestLogin.class
+TestItemandInventory\AutoITTest.class
 TestLogin\CredentialsTest.class
 Testsales\Testsalesperson.class
 TestItemandInventory\UnitofmeasureTest.class

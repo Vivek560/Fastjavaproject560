@@ -1,5 +1,7 @@
 pageobjects\HomePage.class
+pageobjects\BankAccountsPage.class
+pageobjects\LogoutPage.class
+pageobjects\UnitsMeasurePage.class
 pageobjects\LoginPage.class
 pageobjects\SalesTypePage.class
-pageobjects\BankAccountsPage.class
 TestNGP\App.class
