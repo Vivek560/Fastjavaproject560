@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -15,13 +16,19 @@ public class InventorylocationsTest {
 	
 	WebDriver driver;
 	
+	@Parameters("Browser")
 	@BeforeClass
-	public void setup() {
+	public void setup(String browser) {
+		if(browser.contains("Chrome")) {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions option=new ChromeOptions();
 		option.addArguments("--start-maximized");
 		driver = new ChromeDriver(option);
-		
+		}
+		else if(browser.contains("Edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		}	
 	}
 	
 	@Parameters({"URL"})

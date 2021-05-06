@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -23,12 +24,20 @@ public class InventoryTest {
 
 	WebDriver driver;
 	
+	@Parameters("Browser")
 	@BeforeClass
-	public void setup() {
+	public void setup(String browser) {
+		
+		if(browser.contains("Chrome")) {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions option=new ChromeOptions();
 		option.addArguments("--start-maximized");
 		driver = new ChromeDriver(option);
+	}
+		else if(browser.contains("Edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		}	
 		
 	}
 
