@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -16,11 +17,18 @@ public class Testsalesgroup {
 	
 	WebDriver driver;
 
+	@Parameters("Browser")
 	@BeforeMethod(groups= {"SmokeTest"})
-	public void LaunchBrowser() {
+	public void LaunchBrowser(String browser) {
 		
+		if(browser.contains("Chrome")) {
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
+		}
+		else if(browser.contains("Edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		}	
 		driver.manage().window().maximize();
 		
 	}

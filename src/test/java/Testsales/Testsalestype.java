@@ -3,6 +3,8 @@ package Testsales;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -18,12 +20,20 @@ public class Testsalestype {
 	
 	WebDriver driver;
 
+	@Parameters("Browser")
 	@BeforeClass(groups= {"SmokeTest"})
-	public void LaunchBrowser() {
+	public void LaunchBrowser(String browser) {
 		
-		WebDriverManager.chromedriver().setup();
-		driver=new ChromeDriver();
-		driver.manage().window().maximize();
+		if(browser.contains("Chrome")) {
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions option=new ChromeOptions();
+			option.addArguments("--start-maximized");
+			driver = new ChromeDriver(option);
+		}
+			else if(browser.contains("Edge")) {
+				WebDriverManager.edgedriver().setup();
+				driver = new EdgeDriver();
+			}	
 	}
 	
 	@Parameters({"URL","USERNAME","PASSWORD"})

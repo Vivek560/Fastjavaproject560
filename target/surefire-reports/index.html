@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">24 methods,   24 passed</span>
+                    <span class="method-stats">24 methods, 5 failed,   19 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="BankingandLedger.BankAccountsTest" class="method navigator-link" hash-for-method="AddBankAccounts">AddBankAccounts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Testsales.Testsalesperson" class="method navigator-link" hash-for-method="AddSalesperson">AddSalesperson</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestItemandInventory.UnitofmeasureTest" class="method navigator-link" hash-for-method="AddUnitofMeasure">AddUnitofMeasure</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestItemandInventory.InventoryTest" class="method navigator-link" hash-for-method="TestAddInventoryLocation">TestAddInventoryLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestItemandInventory.InventoryTest" class="method navigator-link" hash-for-method="TestAddUnitofMeasure">TestAddUnitofMeasure</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,11 +136,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="BankingandLedger.BankAccountsTest" class="method navigator-link" hash-for-method="AddBankAccounts">AddBankAccounts</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestItemandInventory.InventorylocationsTest" class="method navigator-link" hash-for-method="AddInventoryLocation">AddInventoryLocation</a> <!-- method navigator-link -->
@@ -124,27 +153,27 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Testsales.Testsalesperson" class="method navigator-link" hash-for-method="AddSalesperson">AddSalesperson</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Testsales.Testsalestype" class="method navigator-link" hash-for-method="AddSalestype">AddSalestype</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestItemandInventory.UnitofmeasureTest" class="method navigator-link" hash-for-method="AddUnitofMeasure">AddUnitofMeasure</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Testsales.TestLogin" class="method navigator-link" hash-for-method="Launchbrowser(http://apps.qaplanet.in/erp/index.php)">Launchbrowser(http://apps.qaplanet.in/erp/index.php)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Testsales.TestLogin" class="method navigator-link" hash-for-method="Launchbrowser(Chrome, http://apps.qaplanet.in/erp/index.php)">Launchbrowser(Chrome, http://apps.qaplanet.in/erp/index.php)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestItemandInventory.InventorylocationsTest" class="method navigator-link" hash-for-method="Login(http://apps.qaplanet.in/erp/index.php)">Login(http://apps.qaplanet.in/erp/index.php)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Testsales.Testsalesperson" class="method navigator-link" hash-for-method="Login(http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1)">Login(http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Testsales.TestLogin" class="method navigator-link" hash-for-method="Login(qaplanet1, lab1)">Login(qaplanet1, lab1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,16 +188,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Testsales.TestLogin" class="method navigator-link" hash-for-method="Login(qaplanet1, lab1)">Login(qaplanet1, lab1)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Testsales.Testsalesperson" class="method navigator-link" hash-for-method="Login(http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1)">Login(http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestItemandInventory.UnitofmeasureTest" class="method navigator-link" hash-for-method="Logout">Logout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -179,17 +198,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestItemandInventory.InventoryTest" class="method navigator-link" hash-for-method="TestAddInventoryLocation">TestAddInventoryLocation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestItemandInventory.InventoryTest" class="method navigator-link" hash-for-method="TestAddUnitofMeasure">TestAddUnitofMeasure</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestItemandInventory.InventoryTest" class="method navigator-link" hash-for-method="TestLogin(http://apps.qaplanet.in/erp/index.php)">TestLogin(http://apps.qaplanet.in/erp/index.php)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestLogin.CredentialsTest" class="method navigator-link" hash-for-method="TestvalidateLogin(qaplanet, lab1)">TestvalidateLogin(qaplanet, lab1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -204,17 +218,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestLogin.CredentialsTest" class="method navigator-link" hash-for-method="TestvalidateLogin(qaplanet, lab1)">TestvalidateLogin(qaplanet, lab1)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestItemandInventory.UnitofmeasureTest" class="method navigator-link" hash-for-method="login(http://apps.qaplanet.in/erp/index.php)">login(http://apps.qaplanet.in/erp/index.php)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestItemandInventory.ItemsTest" class="method navigator-link" hash-for-method="login(http://apps.qaplanet.in/erp/index.php)">login(http://apps.qaplanet.in/erp/index.php)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestItemandInventory.UnitofmeasureTest" class="method navigator-link" hash-for-method="login(http://apps.qaplanet.in/erp/index.php)">login(http://apps.qaplanet.in/erp/index.php)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -234,9 +243,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">Testsales.Testsalesperson</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -245,18 +254,164 @@
                   <a name="AddSalesperson">
                   </a> <!-- AddSalesperson -->
                   <span class="method-name">AddSalesperson</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-TPUJHBBQ&apos;, ip: &apos;192.168.0.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 92d09fb15cbf1b1b49c89a773f17f487
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at Testsales.Testsalesperson.AddSalesperson(Testsalesperson.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestItemandInventory.UnitofmeasureTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddUnitofMeasure">
+                  </a> <!-- AddUnitofMeasure -->
+                  <span class="method-name">AddUnitofMeasure</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-TPUJHBBQ&apos;, ip: &apos;192.168.0.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51696}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2deedf31334956674e5894cc60e6eb53
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at TestItemandInventory.UnitofmeasureTest.AddUnitofMeasure(UnitofmeasureTest.java:77)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestItemandInventory.InventoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestAddInventoryLocation">
+                  </a> <!-- TestAddInventoryLocation -->
+                  <span class="method-name">TestAddInventoryLocation</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-TPUJHBBQ&apos;, ip: &apos;192.168.0.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c440cb381d9183021fcda633ad1d0fff
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at TestItemandInventory.InventoryTest.TestAddInventoryLocation(InventoryTest.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Login(http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1)">
-                  </a> <!-- Login(http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1) -->
-                  <span class="method-name">Login</span>
-                  <span class="parameters">(http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1)</span>
+                  <a name="TestAddUnitofMeasure">
+                  </a> <!-- TestAddUnitofMeasure -->
+                  <span class="method-name">TestAddUnitofMeasure</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-TPUJHBBQ&apos;, ip: &apos;192.168.0.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c440cb381d9183021fcda633ad1d0fff
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at TestItemandInventory.InventoryTest.TestAddUnitofMeasure(InventoryTest.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">BankingandLedger.BankAccountsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddBankAccounts">
+                  </a> <!-- AddBankAccounts -->
+                  <span class="method-name">AddBankAccounts</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-TPUJHBBQ&apos;, ip: &apos;192.168.0.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51914}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 132a4876cf48aa326a1b7992db0acf9a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at BankingandLedger.BankAccountsTest.AddBankAccounts(BankAccountsTest.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -283,47 +438,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestLogin.CredentialsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestvalidateLogin(qaplanet1, lab1)">
-                  </a> <!-- TestvalidateLogin(qaplanet1, lab1) -->
-                  <span class="method-name">TestvalidateLogin</span>
-                  <span class="parameters">(qaplanet1, lab1)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestvalidateLogin(qaplanet1, lab)">
-                  </a> <!-- TestvalidateLogin(qaplanet1, lab) -->
-                  <span class="method-name">TestvalidateLogin</span>
-                  <span class="parameters">(qaplanet1, lab)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestvalidateLogin(qaplanet, lab1)">
-                  </a> <!-- TestvalidateLogin(qaplanet, lab1) -->
-                  <span class="method-name">TestvalidateLogin</span>
-                  <span class="parameters">(qaplanet, lab1)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">Testsales.TestLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Launchbrowser(http://apps.qaplanet.in/erp/index.php)">
-                  </a> <!-- Launchbrowser(http://apps.qaplanet.in/erp/index.php) -->
+                  <a name="Launchbrowser(Chrome, http://apps.qaplanet.in/erp/index.php)">
+                  </a> <!-- Launchbrowser(Chrome, http://apps.qaplanet.in/erp/index.php) -->
                   <span class="method-name">Launchbrowser</span>
-                  <span class="parameters">(http://apps.qaplanet.in/erp/index.php)</span>
+                  <span class="parameters">(Chrome, http://apps.qaplanet.in/erp/index.php)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -346,16 +469,25 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestItemandInventory.UnitofmeasureTest</span>
+              <span class="class-name">Testsales.Testsalesperson</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AddUnitofMeasure">
-                  </a> <!-- AddUnitofMeasure -->
-                  <span class="method-name">AddUnitofMeasure</span>
+                  <a name="Login(http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1)">
+                  </a> <!-- Login(http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestItemandInventory.UnitofmeasureTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="Logout">
@@ -381,46 +513,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestAddInventoryLocation">
-                  </a> <!-- TestAddInventoryLocation -->
-                  <span class="method-name">TestAddInventoryLocation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestAddUnitofMeasure">
-                  </a> <!-- TestAddUnitofMeasure -->
-                  <span class="method-name">TestAddUnitofMeasure</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="TestLogin(http://apps.qaplanet.in/erp/index.php)">
                   </a> <!-- TestLogin(http://apps.qaplanet.in/erp/index.php) -->
                   <span class="method-name">TestLogin</span>
-                  <span class="parameters">(http://apps.qaplanet.in/erp/index.php)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestItemandInventory.ItemsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="AddItem">
-                  </a> <!-- AddItem -->
-                  <span class="method-name">AddItem</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="login(http://apps.qaplanet.in/erp/index.php)">
-                  </a> <!-- login(http://apps.qaplanet.in/erp/index.php) -->
-                  <span class="method-name">login</span>
                   <span class="parameters">(http://apps.qaplanet.in/erp/index.php)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -453,16 +548,64 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">BankingandLedger.BankAccountsTest</span>
+              <span class="class-name">TestItemandInventory.ItemsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AddBankAccounts">
-                  </a> <!-- AddBankAccounts -->
-                  <span class="method-name">AddBankAccounts</span>
+                  <a name="AddItem">
+                  </a> <!-- AddItem -->
+                  <span class="method-name">AddItem</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(http://apps.qaplanet.in/erp/index.php)">
+                  </a> <!-- login(http://apps.qaplanet.in/erp/index.php) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(http://apps.qaplanet.in/erp/index.php)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestLogin.CredentialsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestvalidateLogin(qaplanet, lab1)">
+                  </a> <!-- TestvalidateLogin(qaplanet, lab1) -->
+                  <span class="method-name">TestvalidateLogin</span>
+                  <span class="parameters">(qaplanet, lab1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestvalidateLogin(qaplanet1, lab1)">
+                  </a> <!-- TestvalidateLogin(qaplanet1, lab1) -->
+                  <span class="method-name">TestvalidateLogin</span>
+                  <span class="parameters">(qaplanet1, lab1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestvalidateLogin(qaplanet1, lab)">
+                  </a> <!-- TestvalidateLogin(qaplanet1, lab) -->
+                  <span class="method-name">TestvalidateLogin</span>
+                  <span class="parameters">(qaplanet1, lab)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">BankingandLedger.BankAccountsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="login">
@@ -617,104 +760,104 @@ data.addRows(24);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
 data.setCell(0, 2, 'Testsales.Testsalesgroup')
-data.setCell(0, 3, 11755);
+data.setCell(0, 3, 12128);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'AddSalesgroup')
 data.setCell(1, 2, 'Testsales.Testsalesgroup')
-data.setCell(1, 3, 8111);
+data.setCell(1, 3, 8780);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'AddItem')
 data.setCell(2, 2, 'TestItemandInventory.ItemsTest')
-data.setCell(2, 3, 7309);
+data.setCell(2, 3, 8587);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'Login')
 data.setCell(3, 2, 'Testsales.Testsalestype')
-data.setCell(3, 3, 6304);
+data.setCell(3, 3, 6874);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Launchbrowser')
-data.setCell(4, 2, 'Testsales.TestLogin')
-data.setCell(4, 3, 2235);
+data.setCell(4, 1, 'TestAddInventoryLocation')
+data.setCell(4, 2, 'TestItemandInventory.InventoryTest')
+data.setCell(4, 3, 4816);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'AddSalesperson')
-data.setCell(5, 2, 'Testsales.Testsalesperson')
-data.setCell(5, 3, 1791);
+data.setCell(5, 1, 'TestLogin')
+data.setCell(5, 2, 'TestItemandInventory.InventoryTest')
+data.setCell(5, 3, 3716);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Login')
+data.setCell(6, 1, 'AddInventoryLocation')
 data.setCell(6, 2, 'TestItemandInventory.InventorylocationsTest')
-data.setCell(6, 3, 1776);
+data.setCell(6, 3, 3413);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'AddInventoryLocation')
-data.setCell(7, 2, 'TestItemandInventory.InventorylocationsTest')
-data.setCell(7, 3, 1676);
+data.setCell(7, 1, 'AddBankAccounts')
+data.setCell(7, 2, 'BankingandLedger.BankAccountsTest')
+data.setCell(7, 3, 3015);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'AddBankAccounts')
-data.setCell(8, 2, 'BankingandLedger.BankAccountsTest')
-data.setCell(8, 3, 1414);
+data.setCell(8, 1, 'AddSalesperson')
+data.setCell(8, 2, 'Testsales.Testsalesperson')
+data.setCell(8, 3, 2737);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'Login')
-data.setCell(9, 2, 'Testsales.Testsalesperson')
-data.setCell(9, 3, 1373);
+data.setCell(9, 1, 'Launchbrowser')
+data.setCell(9, 2, 'Testsales.TestLogin')
+data.setCell(9, 3, 2364);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TestvalidateLogin')
-data.setCell(10, 2, 'TestLogin.CredentialsTest')
-data.setCell(10, 3, 1352);
+data.setCell(10, 1, 'login')
+data.setCell(10, 2, 'TestItemandInventory.ItemsTest')
+data.setCell(10, 3, 2056);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'login')
-data.setCell(11, 2, 'BankingandLedger.BankAccountsTest')
-data.setCell(11, 3, 1349);
+data.setCell(11, 1, 'Login')
+data.setCell(11, 2, 'TestItemandInventory.InventorylocationsTest')
+data.setCell(11, 3, 1953);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'login')
+data.setCell(12, 1, 'AddUnitofMeasure')
 data.setCell(12, 2, 'TestItemandInventory.UnitofmeasureTest')
-data.setCell(12, 3, 1341);
+data.setCell(12, 3, 1891);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'TestLogin')
-data.setCell(13, 2, 'TestItemandInventory.InventoryTest')
-data.setCell(13, 3, 1318);
+data.setCell(13, 1, 'login')
+data.setCell(13, 2, 'BankingandLedger.BankAccountsTest')
+data.setCell(13, 3, 1708);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'login')
-data.setCell(14, 2, 'TestItemandInventory.ItemsTest')
-data.setCell(14, 3, 1287);
+data.setCell(14, 2, 'TestItemandInventory.UnitofmeasureTest')
+data.setCell(14, 3, 1639);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'AddSalestype')
-data.setCell(15, 2, 'Testsales.Testsalestype')
-data.setCell(15, 3, 1183);
+data.setCell(15, 1, 'TestAddUnitofMeasure')
+data.setCell(15, 2, 'TestItemandInventory.InventoryTest')
+data.setCell(15, 3, 1630);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'TestAddInventoryLocation')
-data.setCell(16, 2, 'TestItemandInventory.InventoryTest')
-data.setCell(16, 3, 1158);
+data.setCell(16, 1, 'TestvalidateLogin')
+data.setCell(16, 2, 'TestLogin.CredentialsTest')
+data.setCell(16, 3, 1539);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'TestvalidateLogin')
-data.setCell(17, 2, 'TestLogin.CredentialsTest')
-data.setCell(17, 3, 1138);
+data.setCell(17, 1, 'Login')
+data.setCell(17, 2, 'Testsales.Testsalesperson')
+data.setCell(17, 3, 1517);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'TestAddUnitofMeasure')
-data.setCell(18, 2, 'TestItemandInventory.InventoryTest')
-data.setCell(18, 3, 1092);
+data.setCell(18, 1, 'AddSalestype')
+data.setCell(18, 2, 'Testsales.Testsalestype')
+data.setCell(18, 3, 1367);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'TestvalidateLogin')
 data.setCell(19, 2, 'TestLogin.CredentialsTest')
-data.setCell(19, 3, 905);
+data.setCell(19, 3, 1337);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'Login')
-data.setCell(20, 2, 'Testsales.TestLogin')
-data.setCell(20, 3, 898);
+data.setCell(20, 1, 'TestvalidateLogin')
+data.setCell(20, 2, 'TestLogin.CredentialsTest')
+data.setCell(20, 3, 1251);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'AddUnitofMeasure')
-data.setCell(21, 2, 'TestItemandInventory.UnitofmeasureTest')
-data.setCell(21, 3, 879);
+data.setCell(21, 1, 'Login')
+data.setCell(21, 2, 'Testsales.TestLogin')
+data.setCell(21, 3, 1029);
 data.setCell(22, 0, 22)
 data.setCell(22, 1, 'Logout')
 data.setCell(22, 2, 'TestItemandInventory.UnitofmeasureTest')
-data.setCell(22, 3, 327);
+data.setCell(22, 3, 422);
 data.setCell(23, 0, 23)
 data.setCell(23, 1, 'Logout')
 data.setCell(23, 2, 'Testsales.TestLogin')
-data.setCell(23, 3, 48);
+data.setCell(23, 3, 127);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -749,223 +892,233 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">TestItemandInventory.InventorylocationsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup</span>
+                <span class="method-name">setup(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Login(http://apps.qaplanet.in/erp/index.php)</span>
-                <span class="method-start">1663 ms</span>
+                <span class="method-start">2345 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AddInventoryLocation</span>
-                <span class="method-start">3442 ms</span>
+                <span class="method-start">4310 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">5118 ms</span>
+                <span class="method-start">7725 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestItemandInventory.UnitofmeasureTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup</span>
-                <span class="method-start">5162 ms</span>
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">7809 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">login(http://apps.qaplanet.in/erp/index.php)</span>
-                <span class="method-start">6768 ms</span>
+                <span class="method-start">10179 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">AddUnitofMeasure</span>
-                <span class="method-start">8109 ms</span>
+                <span class="method-start">11819 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Logout</span>
-                <span class="method-start">8988 ms</span>
+                <span class="method-start">13721 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">9315 ms</span>
+                <span class="method-start">14143 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestItemandInventory.InventoryTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup</span>
-                <span class="method-start">9352 ms</span>
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">14254 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestLogin(http://apps.qaplanet.in/erp/index.php)</span>
-                <span class="method-start">10469 ms</span>
+                <span class="method-start">15802 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TestAddInventoryLocation</span>
-                <span class="method-start">11788 ms</span>
+                <span class="method-start">19521 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TestAddUnitofMeasure</span>
-                <span class="method-start">12946 ms</span>
+                <span class="method-start">24339 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">14038 ms</span>
+                <span class="method-start">25971 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestItemandInventory.ItemsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">14076 ms</span>
+                <span class="method-name">Setup(Chrome)</span>
+                <span class="method-start">26139 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">login(http://apps.qaplanet.in/erp/index.php)</span>
-                <span class="method-start">15247 ms</span>
+                <span class="method-start">27918 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AddItem</span>
-                <span class="method-start">16535 ms</span>
+                <span class="method-start">29976 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">23845 ms</span>
+                <span class="method-start">38563 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testsales.TestLogin</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">Launchbrowser(http://apps.qaplanet.in/erp/index.php)</span>
-                <span class="method-start">23908 ms</span>
+                <span class="method-name">Launchbrowser(Chrome, http://apps.qaplanet.in/erp/index.php)</span>
+                <span class="method-start">38726 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Login(qaplanet1, lab1)</span>
-                <span class="method-start">26144 ms</span>
+                <span class="method-start">41091 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Logout</span>
-                <span class="method-start">27043 ms</span>
+                <span class="method-start">42121 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestLogin.CredentialsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">27094 ms</span>
+                <span class="method-start">42257 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TestvalidateLogin(qaplanet1, lab1)</span>
-                <span class="method-start">28259 ms</span>
+                <span class="method-start">43916 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">29611 ms</span>
+                <span class="method-start">45455 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">29654 ms</span>
+                <span class="method-start">45533 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TestvalidateLogin(qaplanet, lab1)</span>
-                <span class="method-start">30854 ms</span>
+                <span class="method-start">47152 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">31992 ms</span>
+                <span class="method-start">48403 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">32033 ms</span>
+                <span class="method-start">48518 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TestvalidateLogin(qaplanet1, lab)</span>
-                <span class="method-start">33264 ms</span>
+                <span class="method-start">49928 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">34169 ms</span>
+                <span class="method-start">51265 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testsales.Testsalestype</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">LaunchBrowser</span>
-                <span class="method-start">34206 ms</span>
+                <span class="method-start">51372 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Login(http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1)</span>
-                <span class="method-start">35431 ms</span>
+                <span class="method-start">52998 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AddSalestype</span>
-                <span class="method-start">41736 ms</span>
+                <span class="method-start">59873 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">Closebrowser</span>
-                <span class="method-start">42919 ms</span>
+                <span class="method-start">61248 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testsales.Testsalesgroup</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">LaunchBrowser</span>
-                <span class="method-start">42963 ms</span>
+                <span class="method-start">61319 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Login(http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1)</span>
-                <span class="method-start">44219 ms</span>
+                <span class="method-start">62965 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Closebrowser</span>
-                <span class="method-start">55974 ms</span>
+                <span class="method-start">75094 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">LaunchBrowser</span>
-                <span class="method-start">56045 ms</span>
+                <span class="method-start">75312 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AddSalesgroup(http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1)</span>
-                <span class="method-start">57268 ms</span>
+                <span class="method-start">76989 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Closebrowser</span>
-                <span class="method-start">65379 ms</span>
+                <span class="method-start">85769 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testsales.Testsalesperson</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">65426 ms</span>
+                <span class="method-start">85843 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Login(http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1)</span>
-                <span class="method-start">66659 ms</span>
+                <span class="method-start">87437 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">AddSalesperson</span>
-                <span class="method-start">68033 ms</span>
+                <span class="method-start">88955 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">Closebrowser</span>
-                <span class="method-start">69825 ms</span>
+                <span class="method-start">91696 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">BankingandLedger.BankAccountsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">69869 ms</span>
+                <span class="method-name">Setup(Chrome)</span>
+                <span class="method-start">91898 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">71104 ms</span>
+                <span class="method-start">93598 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">AddBankAccounts</span>
-                <span class="method-start">72453 ms</span>
+                <span class="method-start">95307 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">73867 ms</span>
+                <span class="method-start">98324 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="25" passed="24" failed="0" skipped="0">
+<testng-results ignored="1" total="25" passed="19" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-06T19:35:04 IST" name="Suite" finished-at="2021-05-06T19:36:18 IST" duration-ms="73918">
+  <suite started-at="2021-05-06T21:35:39 IST" name="Suite" finished-at="2021-05-06T21:37:17 IST" duration-ms="98420">
     <groups>
       <group name="SmokeTest">
-        <method signature="TestLogin.Launchbrowser(java.lang.String)[pri:1, instance:Testsales.TestLogin@383bfa16]" name="Launchbrowser" class="Testsales.TestLogin"/>
+        <method signature="TestLogin.Launchbrowser(java.lang.String,java.lang.String)[pri:1, instance:Testsales.TestLogin@383bfa16]" name="Launchbrowser" class="Testsales.TestLogin"/>
         <method signature="TestLogin.Login(java.lang.String,java.lang.String)[pri:2, instance:Testsales.TestLogin@383bfa16]" name="Login" class="Testsales.TestLogin"/>
         <method signature="TestLogin.Logout()[pri:3, instance:Testsales.TestLogin@383bfa16]" name="Logout" class="Testsales.TestLogin"/>
         <method signature="Testsalesgroup.AddSalesgroup(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:Testsales.Testsalesgroup@5562c41e]" name="AddSalesgroup" class="Testsales.Testsalesgroup"/>
@@ -14,17 +14,24 @@
         <method signature="Testsalestype.Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalestype@53fdffa1]" name="Login" class="Testsales.Testsalestype"/>
       </group> <!-- SmokeTest -->
       <group name="Regression">
-        <method signature="ItemsTest.AddItem()[pri:2, instance:TestItemandInventory.ItemsTest@693fe6c9]" name="AddItem" class="TestItemandInventory.ItemsTest"/>
-        <method signature="ItemsTest.login(java.lang.String)[pri:1, instance:TestItemandInventory.ItemsTest@693fe6c9]" name="login" class="TestItemandInventory.ItemsTest"/>
+        <method signature="ItemsTest.AddItem()[pri:2, instance:TestItemandInventory.ItemsTest@31e5415e]" name="AddItem" class="TestItemandInventory.ItemsTest"/>
+        <method signature="ItemsTest.login(java.lang.String)[pri:1, instance:TestItemandInventory.ItemsTest@31e5415e]" name="login" class="TestItemandInventory.ItemsTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2021-05-06T19:35:04 IST" name="ItemandInventory" finished-at="2021-05-06T19:35:28 IST" duration-ms="23906">
+    <test started-at="2021-05-06T21:35:39 IST" name="ItemandInventory" finished-at="2021-05-06T21:36:17 IST" duration-ms="38673">
       <class name="TestItemandInventory.ItemsTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:TestItemandInventory.ItemsTest@693fe6c9]" started-at="2021-05-06T19:35:18 IST" name="Setup" finished-at="2021-05-06T19:35:19 IST" duration-ms="1171" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:TestItemandInventory.ItemsTest@31e5415e]" started-at="2021-05-06T21:36:05 IST" name="Setup" finished-at="2021-05-06T21:36:07 IST" duration-ms="1778" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="login(java.lang.String)[pri:1, instance:TestItemandInventory.ItemsTest@693fe6c9]" started-at="2021-05-06T19:35:19 IST" name="login" finished-at="2021-05-06T19:35:20 IST" duration-ms="1287" status="PASS">
+        <test-method signature="login(java.lang.String)[pri:1, instance:TestItemandInventory.ItemsTest@31e5415e]" started-at="2021-05-06T21:36:07 IST" name="login" finished-at="2021-05-06T21:36:09 IST" duration-ms="2056" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,21 +42,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="AddItem()[pri:2, instance:TestItemandInventory.ItemsTest@693fe6c9]" started-at="2021-05-06T19:35:20 IST" name="AddItem" finished-at="2021-05-06T19:35:28 IST" duration-ms="7309" status="PASS">
+        <test-method signature="AddItem()[pri:2, instance:TestItemandInventory.ItemsTest@31e5415e]" started-at="2021-05-06T21:36:09 IST" name="AddItem" finished-at="2021-05-06T21:36:17 IST" duration-ms="8587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddItem -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestItemandInventory.ItemsTest@693fe6c9]" started-at="2021-05-06T19:35:28 IST" name="teardown" finished-at="2021-05-06T19:35:28 IST" duration-ms="47" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestItemandInventory.ItemsTest@31e5415e]" started-at="2021-05-06T21:36:17 IST" name="teardown" finished-at="2021-05-06T21:36:17 IST" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- TestItemandInventory.ItemsTest -->
       <class name="TestItemandInventory.UnitofmeasureTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestItemandInventory.UnitofmeasureTest@1613674b]" started-at="2021-05-06T19:35:09 IST" name="setup" finished-at="2021-05-06T19:35:11 IST" duration-ms="1606" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestItemandInventory.UnitofmeasureTest@4e096385]" started-at="2021-05-06T21:35:47 IST" name="setup" finished-at="2021-05-06T21:35:49 IST" duration-ms="2369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login(java.lang.String)[pri:1, instance:TestItemandInventory.UnitofmeasureTest@1613674b]" started-at="2021-05-06T19:35:11 IST" name="login" finished-at="2021-05-06T19:35:12 IST" duration-ms="1341" status="PASS">
+        <test-method signature="login(java.lang.String)[pri:1, instance:TestItemandInventory.UnitofmeasureTest@4e096385]" started-at="2021-05-06T21:35:49 IST" name="login" finished-at="2021-05-06T21:35:51 IST" duration-ms="1639" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,25 +74,106 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="AddUnitofMeasure()[pri:2, instance:TestItemandInventory.UnitofmeasureTest@1613674b]" started-at="2021-05-06T19:35:12 IST" name="AddUnitofMeasure" finished-at="2021-05-06T19:35:13 IST" duration-ms="879" status="PASS">
+        <test-method signature="AddUnitofMeasure()[pri:2, instance:TestItemandInventory.UnitofmeasureTest@4e096385]" started-at="2021-05-06T21:35:51 IST" name="AddUnitofMeasure" finished-at="2021-05-06T21:35:52 IST" duration-ms="1891" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51696}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2deedf31334956674e5894cc60e6eb53]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51696}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2deedf31334956674e5894cc60e6eb53
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy16.click(Unknown Source)
+at TestItemandInventory.UnitofmeasureTest.AddUnitofMeasure(UnitofmeasureTest.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddUnitofMeasure -->
-        <test-method signature="Logout()[pri:3, instance:TestItemandInventory.UnitofmeasureTest@1613674b]" started-at="2021-05-06T19:35:13 IST" name="Logout" finished-at="2021-05-06T19:35:13 IST" duration-ms="327" status="PASS">
+        <test-method signature="Logout()[pri:3, instance:TestItemandInventory.UnitofmeasureTest@4e096385]" started-at="2021-05-06T21:35:52 IST" name="Logout" finished-at="2021-05-06T21:35:53 IST" duration-ms="422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestItemandInventory.UnitofmeasureTest@1613674b]" started-at="2021-05-06T19:35:13 IST" name="teardown" finished-at="2021-05-06T19:35:13 IST" duration-ms="36" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestItemandInventory.UnitofmeasureTest@4e096385]" started-at="2021-05-06T21:35:53 IST" name="teardown" finished-at="2021-05-06T21:35:53 IST" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- TestItemandInventory.UnitofmeasureTest -->
       <class name="TestItemandInventory.InventorylocationsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestItemandInventory.InventorylocationsTest@51dcb805]" started-at="2021-05-06T19:35:04 IST" name="setup" finished-at="2021-05-06T19:35:06 IST" duration-ms="1656" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestItemandInventory.InventorylocationsTest@cad498c]" started-at="2021-05-06T21:35:39 IST" name="setup" finished-at="2021-05-06T21:35:41 IST" duration-ms="2337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login(java.lang.String)[pri:1, instance:TestItemandInventory.InventorylocationsTest@51dcb805]" started-at="2021-05-06T19:35:06 IST" name="Login" finished-at="2021-05-06T19:35:07 IST" duration-ms="1776" status="PASS">
+        <test-method signature="Login(java.lang.String)[pri:1, instance:TestItemandInventory.InventorylocationsTest@cad498c]" started-at="2021-05-06T21:35:41 IST" name="Login" finished-at="2021-05-06T21:35:43 IST" duration-ms="1953" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,21 +184,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="AddInventoryLocation()[pri:2, instance:TestItemandInventory.InventorylocationsTest@51dcb805]" started-at="2021-05-06T19:35:07 IST" name="AddInventoryLocation" finished-at="2021-05-06T19:35:09 IST" duration-ms="1676" status="PASS">
+        <test-method signature="AddInventoryLocation()[pri:2, instance:TestItemandInventory.InventorylocationsTest@cad498c]" started-at="2021-05-06T21:35:43 IST" name="AddInventoryLocation" finished-at="2021-05-06T21:35:46 IST" duration-ms="3413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddInventoryLocation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestItemandInventory.InventorylocationsTest@51dcb805]" started-at="2021-05-06T19:35:09 IST" name="teardown" finished-at="2021-05-06T19:35:09 IST" duration-ms="43" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestItemandInventory.InventorylocationsTest@cad498c]" started-at="2021-05-06T21:35:46 IST" name="teardown" finished-at="2021-05-06T21:35:47 IST" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- TestItemandInventory.InventorylocationsTest -->
       <class name="TestItemandInventory.InventoryTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestItemandInventory.InventoryTest@649bec2e]" started-at="2021-05-06T19:35:13 IST" name="setup" finished-at="2021-05-06T19:35:14 IST" duration-ms="1117" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestItemandInventory.InventoryTest@34f5090e]" started-at="2021-05-06T21:35:53 IST" name="setup" finished-at="2021-05-06T21:35:54 IST" duration-ms="1548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String)[pri:1, instance:TestItemandInventory.InventoryTest@649bec2e]" started-at="2021-05-06T19:35:14 IST" name="TestLogin" finished-at="2021-05-06T19:35:16 IST" duration-ms="1318" status="PASS">
+        <test-method signature="TestLogin(java.lang.String)[pri:1, instance:TestItemandInventory.InventoryTest@34f5090e]" started-at="2021-05-06T21:35:54 IST" name="TestLogin" finished-at="2021-05-06T21:35:58 IST" duration-ms="3716" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,25 +216,166 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method signature="TestAddInventoryLocation()[pri:2, instance:TestItemandInventory.InventoryTest@649bec2e]" started-at="2021-05-06T19:35:16 IST" name="TestAddInventoryLocation" finished-at="2021-05-06T19:35:17 IST" duration-ms="1158" status="PASS">
+        <test-method signature="TestAddInventoryLocation()[pri:2, instance:TestItemandInventory.InventoryTest@34f5090e]" started-at="2021-05-06T21:35:58 IST" name="TestAddInventoryLocation" finished-at="2021-05-06T21:36:03 IST" duration-ms="4816" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c440cb381d9183021fcda633ad1d0fff]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c440cb381d9183021fcda633ad1d0fff
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at TestItemandInventory.InventoryTest.TestAddInventoryLocation(InventoryTest.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestAddInventoryLocation -->
-        <test-method signature="TestAddUnitofMeasure()[pri:4, instance:TestItemandInventory.InventoryTest@649bec2e]" started-at="2021-05-06T19:35:17 IST" name="TestAddUnitofMeasure" finished-at="2021-05-06T19:35:18 IST" duration-ms="1092" status="PASS">
+        <test-method signature="TestAddUnitofMeasure()[pri:4, instance:TestItemandInventory.InventoryTest@34f5090e]" started-at="2021-05-06T21:36:03 IST" name="TestAddUnitofMeasure" finished-at="2021-05-06T21:36:05 IST" duration-ms="1630" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c440cb381d9183021fcda633ad1d0fff]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c440cb381d9183021fcda633ad1d0fff
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at TestItemandInventory.InventoryTest.TestAddUnitofMeasure(InventoryTest.java:128)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestAddUnitofMeasure -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestItemandInventory.InventoryTest@649bec2e]" started-at="2021-05-06T19:35:18 IST" name="teardown" finished-at="2021-05-06T19:35:18 IST" duration-ms="38" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestItemandInventory.InventoryTest@34f5090e]" started-at="2021-05-06T21:36:05 IST" name="teardown" finished-at="2021-05-06T21:36:05 IST" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- TestItemandInventory.InventoryTest -->
     </test> <!-- ItemandInventory -->
-    <test started-at="2021-05-06T19:35:28 IST" name="Testsales" finished-at="2021-05-06T19:36:14 IST" duration-ms="45956">
+    <test started-at="2021-05-06T21:36:17 IST" name="Testsales" finished-at="2021-05-06T21:37:11 IST" duration-ms="53154">
       <class name="Testsales.TestLogin">
-        <test-method signature="Launchbrowser(java.lang.String)[pri:1, instance:Testsales.TestLogin@383bfa16]" started-at="2021-05-06T19:35:28 IST" name="Launchbrowser" finished-at="2021-05-06T19:35:30 IST" duration-ms="2235" status="PASS">
+        <test-method signature="Launchbrowser(java.lang.String,java.lang.String)[pri:1, instance:Testsales.TestLogin@383bfa16]" started-at="2021-05-06T21:36:17 IST" name="Launchbrowser" finished-at="2021-05-06T21:36:20 IST" duration-ms="2364" status="PASS">
           <params>
             <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
               <value>
                 <![CDATA[http://apps.qaplanet.in/erp/index.php]]>
               </value>
@@ -141,7 +384,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launchbrowser -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:Testsales.TestLogin@383bfa16]" started-at="2021-05-06T19:35:30 IST" name="Login" finished-at="2021-05-06T19:35:31 IST" duration-ms="898" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:Testsales.TestLogin@383bfa16]" started-at="2021-05-06T21:36:20 IST" name="Login" finished-at="2021-05-06T21:36:21 IST" duration-ms="1029" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -157,17 +400,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Logout()[pri:3, instance:Testsales.TestLogin@383bfa16]" started-at="2021-05-06T19:35:31 IST" name="Logout" finished-at="2021-05-06T19:35:31 IST" duration-ms="48" status="PASS">
+        <test-method signature="Logout()[pri:3, instance:Testsales.TestLogin@383bfa16]" started-at="2021-05-06T21:36:21 IST" name="Logout" finished-at="2021-05-06T21:36:21 IST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
       </class> <!-- Testsales.TestLogin -->
       <class name="Testsales.Testsalestype">
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Testsales.Testsalestype@53fdffa1]" started-at="2021-05-06T19:35:38 IST" name="LaunchBrowser" finished-at="2021-05-06T19:35:39 IST" duration-ms="1225" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Testsales.Testsalestype@53fdffa1]" started-at="2021-05-06T21:36:30 IST" name="LaunchBrowser" finished-at="2021-05-06T21:36:32 IST" duration-ms="1624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalestype@53fdffa1]" started-at="2021-05-06T19:35:39 IST" name="Login" finished-at="2021-05-06T19:35:46 IST" duration-ms="6304" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalestype@53fdffa1]" started-at="2021-05-06T21:36:32 IST" name="Login" finished-at="2021-05-06T21:36:39 IST" duration-ms="6874" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -188,21 +431,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="AddSalestype()[pri:2, instance:Testsales.Testsalestype@53fdffa1]" started-at="2021-05-06T19:35:46 IST" name="AddSalestype" finished-at="2021-05-06T19:35:47 IST" duration-ms="1183" status="PASS">
+        <test-method signature="AddSalestype()[pri:2, instance:Testsales.Testsalestype@53fdffa1]" started-at="2021-05-06T21:36:39 IST" name="AddSalestype" finished-at="2021-05-06T21:36:40 IST" duration-ms="1367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddSalestype -->
-        <test-method is-config="true" signature="Closebrowser()[pri:0, instance:Testsales.Testsalestype@53fdffa1]" started-at="2021-05-06T19:35:47 IST" name="Closebrowser" finished-at="2021-05-06T19:35:47 IST" duration-ms="43" status="PASS">
+        <test-method is-config="true" signature="Closebrowser()[pri:0, instance:Testsales.Testsalestype@53fdffa1]" started-at="2021-05-06T21:36:40 IST" name="Closebrowser" finished-at="2021-05-06T21:36:40 IST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Closebrowser -->
       </class> <!-- Testsales.Testsalestype -->
       <class name="TestLogin.CredentialsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T19:35:31 IST" name="setup" finished-at="2021-05-06T19:35:32 IST" duration-ms="1164" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T21:36:21 IST" name="setup" finished-at="2021-05-06T21:36:23 IST" duration-ms="1656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestvalidateLogin(java.lang.String,java.lang.String)[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T19:35:32 IST" name="TestvalidateLogin" data-provider="credentials" finished-at="2021-05-06T19:35:34 IST" duration-ms="1352" status="PASS">
+        <test-method signature="TestvalidateLogin(java.lang.String,java.lang.String)[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T21:36:23 IST" name="TestvalidateLogin" data-provider="credentials" finished-at="2021-05-06T21:36:24 IST" duration-ms="1539" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -218,15 +461,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestvalidateLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T19:35:34 IST" name="teardown" finished-at="2021-05-06T19:35:34 IST" duration-ms="43" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T21:36:24 IST" name="teardown" finished-at="2021-05-06T21:36:24 IST" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T19:35:34 IST" name="setup" finished-at="2021-05-06T19:35:35 IST" duration-ms="1200" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T21:36:24 IST" name="setup" finished-at="2021-05-06T21:36:26 IST" duration-ms="1619" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestvalidateLogin(java.lang.String,java.lang.String)[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T19:35:35 IST" name="TestvalidateLogin" data-provider="credentials" finished-at="2021-05-06T19:35:36 IST" duration-ms="1138" status="PASS">
+        <test-method signature="TestvalidateLogin(java.lang.String,java.lang.String)[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T21:36:26 IST" name="TestvalidateLogin" data-provider="credentials" finished-at="2021-05-06T21:36:27 IST" duration-ms="1251" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -242,15 +485,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestvalidateLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T19:35:36 IST" name="teardown" finished-at="2021-05-06T19:35:36 IST" duration-ms="41" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T21:36:27 IST" name="teardown" finished-at="2021-05-06T21:36:27 IST" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T19:35:36 IST" name="setup" finished-at="2021-05-06T19:35:37 IST" duration-ms="1231" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T21:36:27 IST" name="setup" finished-at="2021-05-06T21:36:29 IST" duration-ms="1410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestvalidateLogin(java.lang.String,java.lang.String)[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T19:35:37 IST" name="TestvalidateLogin" data-provider="credentials" finished-at="2021-05-06T19:35:38 IST" duration-ms="905" status="PASS">
+        <test-method signature="TestvalidateLogin(java.lang.String,java.lang.String)[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T21:36:29 IST" name="TestvalidateLogin" data-provider="credentials" finished-at="2021-05-06T21:36:30 IST" duration-ms="1337" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -266,17 +509,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestvalidateLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T19:35:38 IST" name="teardown" finished-at="2021-05-06T19:35:38 IST" duration-ms="36" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestLogin.CredentialsTest@4d465b11]" started-at="2021-05-06T21:36:30 IST" name="teardown" finished-at="2021-05-06T21:36:30 IST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- TestLogin.CredentialsTest -->
       <class name="Testsales.Testsalesperson">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:Testsales.Testsalesperson@32ee6fee]" started-at="2021-05-06T19:36:09 IST" name="Setup" finished-at="2021-05-06T19:36:11 IST" duration-ms="1233" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:Testsales.Testsalesperson@32ee6fee]" started-at="2021-05-06T21:37:05 IST" name="Setup" finished-at="2021-05-06T21:37:06 IST" duration-ms="1592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalesperson@32ee6fee]" started-at="2021-05-06T19:36:11 IST" name="Login" finished-at="2021-05-06T19:36:12 IST" duration-ms="1373" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalesperson@32ee6fee]" started-at="2021-05-06T21:37:06 IST" name="Login" finished-at="2021-05-06T21:37:08 IST" duration-ms="1517" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -297,21 +540,89 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="AddSalesperson()[pri:2, instance:Testsales.Testsalesperson@32ee6fee]" started-at="2021-05-06T19:36:12 IST" name="AddSalesperson" finished-at="2021-05-06T19:36:14 IST" duration-ms="1791" status="PASS">
+        <test-method signature="AddSalesperson()[pri:2, instance:Testsales.Testsalesperson@32ee6fee]" started-at="2021-05-06T21:37:08 IST" name="AddSalesperson" finished-at="2021-05-06T21:37:10 IST" duration-ms="2737" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 92d09fb15cbf1b1b49c89a773f17f487]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 92d09fb15cbf1b1b49c89a773f17f487
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at Testsales.Testsalesperson.AddSalesperson(Testsalesperson.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddSalesperson -->
-        <test-method is-config="true" signature="Closebrowser()[pri:0, instance:Testsales.Testsalesperson@32ee6fee]" started-at="2021-05-06T19:36:14 IST" name="Closebrowser" finished-at="2021-05-06T19:36:14 IST" duration-ms="38" status="PASS">
+        <test-method is-config="true" signature="Closebrowser()[pri:0, instance:Testsales.Testsalesperson@32ee6fee]" started-at="2021-05-06T21:37:10 IST" name="Closebrowser" finished-at="2021-05-06T21:37:11 IST" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Closebrowser -->
       </class> <!-- Testsales.Testsalesperson -->
       <class name="Testsales.Testsalesgroup">
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Testsales.Testsalesgroup@5562c41e]" started-at="2021-05-06T19:35:47 IST" name="LaunchBrowser" finished-at="2021-05-06T19:35:48 IST" duration-ms="1256" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Testsales.Testsalesgroup@5562c41e]" started-at="2021-05-06T21:36:40 IST" name="LaunchBrowser" finished-at="2021-05-06T21:36:42 IST" duration-ms="1646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalesgroup@5562c41e]" started-at="2021-05-06T19:35:48 IST" name="Login" finished-at="2021-05-06T19:36:00 IST" duration-ms="11755" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalesgroup@5562c41e]" started-at="2021-05-06T21:36:42 IST" name="Login" finished-at="2021-05-06T21:36:54 IST" duration-ms="12128" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -332,15 +643,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="Closebrowser()[pri:0, instance:Testsales.Testsalesgroup@5562c41e]" started-at="2021-05-06T19:36:00 IST" name="Closebrowser" finished-at="2021-05-06T19:36:00 IST" duration-ms="70" status="PASS">
+        <test-method is-config="true" signature="Closebrowser()[pri:0, instance:Testsales.Testsalesgroup@5562c41e]" started-at="2021-05-06T21:36:54 IST" name="Closebrowser" finished-at="2021-05-06T21:36:54 IST" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Closebrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Testsales.Testsalesgroup@5562c41e]" started-at="2021-05-06T19:36:00 IST" name="LaunchBrowser" finished-at="2021-05-06T19:36:01 IST" duration-ms="1223" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Testsales.Testsalesgroup@5562c41e]" started-at="2021-05-06T21:36:54 IST" name="LaunchBrowser" finished-at="2021-05-06T21:36:56 IST" duration-ms="1677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="AddSalesgroup(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:Testsales.Testsalesgroup@5562c41e]" started-at="2021-05-06T19:36:01 IST" name="AddSalesgroup" finished-at="2021-05-06T19:36:09 IST" duration-ms="8111" status="PASS">
+        <test-method signature="AddSalesgroup(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:Testsales.Testsalesgroup@5562c41e]" started-at="2021-05-06T21:36:56 IST" name="AddSalesgroup" finished-at="2021-05-06T21:37:04 IST" duration-ms="8780" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -361,27 +672,102 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddSalesgroup -->
-        <test-method is-config="true" signature="Closebrowser()[pri:0, instance:Testsales.Testsalesgroup@5562c41e]" started-at="2021-05-06T19:36:09 IST" name="Closebrowser" finished-at="2021-05-06T19:36:09 IST" duration-ms="47" status="PASS">
+        <test-method is-config="true" signature="Closebrowser()[pri:0, instance:Testsales.Testsalesgroup@5562c41e]" started-at="2021-05-06T21:37:04 IST" name="Closebrowser" finished-at="2021-05-06T21:37:05 IST" duration-ms="74" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Closebrowser -->
       </class> <!-- Testsales.Testsalesgroup -->
     </test> <!-- Testsales -->
-    <test started-at="2021-05-06T19:36:14 IST" name="BankingandLedger" finished-at="2021-05-06T19:36:18 IST" duration-ms="4036">
+    <test started-at="2021-05-06T21:37:11 IST" name="BankingandLedger" finished-at="2021-05-06T21:37:17 IST" duration-ms="6505">
       <class name="BankingandLedger.BankAccountsTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:BankingandLedger.BankAccountsTest@28f2a10f]" started-at="2021-05-06T19:36:14 IST" name="Setup" finished-at="2021-05-06T19:36:15 IST" duration-ms="1235" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:BankingandLedger.BankAccountsTest@28f2a10f]" started-at="2021-05-06T21:37:11 IST" name="Setup" finished-at="2021-05-06T21:37:12 IST" duration-ms="1699" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="login()[pri:1, instance:BankingandLedger.BankAccountsTest@28f2a10f]" started-at="2021-05-06T19:36:15 IST" name="login" finished-at="2021-05-06T19:36:16 IST" duration-ms="1349" status="PASS">
+        <test-method signature="login()[pri:1, instance:BankingandLedger.BankAccountsTest@28f2a10f]" started-at="2021-05-06T21:37:12 IST" name="login" finished-at="2021-05-06T21:37:14 IST" duration-ms="1708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="AddBankAccounts()[pri:2, instance:BankingandLedger.BankAccountsTest@28f2a10f]" started-at="2021-05-06T19:36:16 IST" name="AddBankAccounts" finished-at="2021-05-06T19:36:18 IST" duration-ms="1414" status="PASS">
+        <test-method signature="AddBankAccounts()[pri:2, instance:BankingandLedger.BankAccountsTest@28f2a10f]" started-at="2021-05-06T21:37:14 IST" name="AddBankAccounts" finished-at="2021-05-06T21:37:17 IST" duration-ms="3015" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51914}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 132a4876cf48aa326a1b7992db0acf9a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51914}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 132a4876cf48aa326a1b7992db0acf9a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at BankingandLedger.BankAccountsTest.AddBankAccounts(BankAccountsTest.java:72)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddBankAccounts -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:BankingandLedger.BankAccountsTest@28f2a10f]" started-at="2021-05-06T19:36:18 IST" name="teardown" finished-at="2021-05-06T19:36:18 IST" duration-ms="37" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:BankingandLedger.BankAccountsTest@28f2a10f]" started-at="2021-05-06T21:37:17 IST" name="teardown" finished-at="2021-05-06T21:37:17 IST" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
