@@ -5,6 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -22,11 +23,18 @@ public class UnitofmeasureTest {
 	WebDriver driver;
 	Logger log;
 	
+	@Parameters("Browser")
 	@BeforeClass
-	public void setup() {
+	public void setup(String browser) {
+		if(browser.contains("Chrome")) {
 		WebDriverManager.chromedriver().setup();
 		log = LogManager.getLogger(UnitofmeasureTest.class.getName());
 		driver=new ChromeDriver();
+		}
+		else if(browser.contains("Edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		}	
 		driver.manage().window().maximize();
 		log.debug("The browser is opened and maximized");
 	}

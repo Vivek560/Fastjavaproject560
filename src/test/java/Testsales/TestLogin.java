@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -15,12 +16,19 @@ public class TestLogin {
 	
 	WebDriver driver;
 	
-	@Parameters({"URL"})
+	@Parameters({"Browser","URL"})
 	@Test(groups= {"SmokeTest"},priority=1)
-	public void Launchbrowser(String url) {
+	public void Launchbrowser(String browser, String url) {
+		if(browser.contains("Chrome")) {
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
+		}
+		else if(browser.contains("Edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		}	
 		driver.manage().window().maximize();
+		
 		driver.get(url);
 		Assert.assertEquals(driver.getTitle(), "FrontAccounting 2.4.2 - Login");
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
