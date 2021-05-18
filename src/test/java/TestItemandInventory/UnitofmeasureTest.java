@@ -63,7 +63,7 @@ public class UnitofmeasureTest {
 	}
 
 	@Test(priority=2)
-	public void AddUnitofMeasure() {
+	public void AddUnitofMeasure() throws InterruptedException {
 		
 		HomePage homepage=new HomePage(driver);
 		homepage.ItemsandInventory().click();
@@ -78,7 +78,7 @@ public class UnitofmeasureTest {
 		Decimaldropdown.selectByValue("1");
 		units.AddNewButton().click();
 		units.Back().click();
-		
+		Thread.sleep(2000);
 	}
 	
 	@Test(priority=3)

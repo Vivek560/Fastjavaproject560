@@ -4,5 +4,7 @@ pageobjects\LogoutPage.class
 pageobjects\UnitsMeasurePage.class
 pageobjects\Itemspage.class
 pageobjects\LoginPage.class
+pageobjects\InventorylocationPage.class
 pageobjects\SalesTypePage.class
 TestNGP\App.class
+pageobjects\SalespersonPage.class
