@@ -18,6 +18,10 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageobjects.HomePage;
+import pageobjects.Itemspage;
+import pageobjects.LoginPage;
+import pageobjects.LogoutPage;
 
 public class InventoryTest {
 
@@ -45,9 +49,11 @@ public class InventoryTest {
 	@Test(priority=1)
 	public void TestLogin(String url) {
 		driver.get(url);
-		driver.findElement(By.xpath("//*[@name='user_name_entry_field']")).sendKeys("qaplanet1");
-		driver.findElement(By.xpath("//*[@name='password']")).sendKeys("lab1");
-		driver.findElement(By.xpath("//*[@name='SubmitUser']")).click();
+		LoginPage loginpage=new LoginPage(driver);
+		loginpage.Username().sendKeys("qaplanet1");
+		loginpage.Password().sendKeys("lab1");
+		loginpage.Login().click();
+		
 	}
 
 	@Test(priority=2)
@@ -69,49 +75,53 @@ public class InventoryTest {
 	@Test(enabled=false)
 	public void TestAddItem() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.findElement(By.linkText("Items and Inventory")).click();
-		driver.findElement(By.linkText("Items")).click();
+		HomePage homepage=new HomePage(driver);
+		homepage.ItemsandInventory().click();
+		homepage.Items().click();
 		
+		Itemspage items=new Itemspage(driver);
 		Actions action=new Actions(driver);
-		action.click(driver.findElement(By.xpath("//*[@name='NewStockID']"))).build().perform();
+		action.click(items.Itemscode()).build().perform();
+		items.Itemscode().sendKeys("1298");
 		
-		driver.findElement(By.xpath("//*[@name='NewStockID']")).sendKeys("1298");
-		driver.findElement(By.xpath("//*[@name='description']")).sendKeys("kumar");
-		driver.findElement(By.xpath("//*[@name='long_description']")).sendKeys("Items holding Description");
+		items.Name().sendKeys("jai");
 		
-		Select categorydropdown=new Select(driver.findElement(By.xpath("//*[@name='category_id']")));
+		items.Description().sendKeys("Items holding Description");
+		
+		
+		Select categorydropdown=new Select(items.Category());
 		categorydropdown.selectByValue("4");
 		
-		Select itemtaxtypedropdown=new Select(driver.findElement(By.xpath("//*[@name='tax_type_id']")));
+		Select itemtaxtypedropdown=new Select(items.Taxtype());
 		itemtaxtypedropdown.selectByValue("1");
 		
-		Select itemtypedropdown=new Select(driver.findElement(By.xpath("//*[@name='mb_flag']")));
+		Select itemtypedropdown=new Select(items.Itemtype());
 		itemtypedropdown.selectByValue("D");
 		
-		Select unitsofmeasuredropdown=new Select(driver.findElement(By.xpath("//*[@name='units']")));
+		Select unitsofmeasuredropdown=new Select(items.Unitsmeasure());
 		unitsofmeasuredropdown.selectByValue("ML");
 		Thread.sleep(5000);
 		WebDriverWait wait=new WebDriverWait(driver, 25);
 		
-		WebElement description=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@name='editable']")));
+		WebElement description=wait.until(ExpectedConditions.elementToBeClickable(items.Editable()));
 		description.click();
-		WebElement sales=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@name='no_sale']")));
+		WebElement sales=wait.until(ExpectedConditions.elementToBeClickable(items.Sales()));
 		sales.click();
 		
 		
-		WebElement dimension=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@name='dimension_id']")));
+		WebElement dimension=wait.until(ExpectedConditions.elementToBeClickable(items.Dimension()));
 		
 		Select dimensiondropdown=new Select(dimension);
 		dimensiondropdown.selectByValue("1");
 		
-		Select accountdropdown=new Select(driver.findElement(By.xpath("//*[@name='sales_account']")));
+		Select accountdropdown=new Select(items.SalesAccount());
 		accountdropdown.selectByValue("1060");
 		
-		Select cogsaccountdropdown=new Select(driver.findElement(By.xpath("//*[@name='cogs_account']")));
+		Select cogsaccountdropdown=new Select(items.Cogsaccount());
 		cogsaccountdropdown.selectByValue("1520");
 		
-		driver.findElement(By.xpath("//*[span='Insert New Item']")).click();
-		driver.findElement(By.linkText("Back"));
+		items.InsertNewItem().click();
+		items.Back().click();
 		
 	}
 	
@@ -126,7 +136,8 @@ public class InventoryTest {
 		Decimaldropdown.selectByValue("1");
 		driver.findElement(By.xpath("//*[span='Add new']")).click();
 		driver.findElement(By.linkText("Back")).click();
-		driver.findElement(By.linkText("Logout")).click();
+		LogoutPage logout=new LogoutPage(driver);
+		logout.Logout().click();
 	}
 	
 	@AfterClass

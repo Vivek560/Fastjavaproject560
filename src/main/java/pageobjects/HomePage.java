@@ -14,7 +14,9 @@ public class HomePage {
 	
 	private By bankingandLedgerlink = By.linkText("Banking and General Ledger");
 	private By sales = By.linkText("Sales");
+	private By salesperson=By.linkText("Sales Persons");
 	private By itemsandinventory=By.linkText("Items and Inventory");
+	private By addinventorylocation=By.linkText("Inventory Locations");
 	private By unitsofmeasures=By.linkText("Units of Measure");
 	private By items=By.linkText("Items");
 	private By bankaccount=new By.ByLinkText("Bank Accounts");
@@ -25,8 +27,16 @@ public class HomePage {
 		return driver.findElement(sales);
 	}
 	
+	public WebElement Salesperson() {
+		return driver.findElement(salesperson);
+	}
+	
 	public WebElement ItemsandInventory() {
 		return driver.findElement(itemsandinventory);
+	}
+	
+	public WebElement AddInventoryLocations() {
+		return driver.findElement(addinventorylocation);
 	}
 	
 	public WebElement UnitsofMeasures() {

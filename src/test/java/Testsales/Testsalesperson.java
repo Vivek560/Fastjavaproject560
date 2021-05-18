@@ -14,6 +14,10 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageobjects.HomePage;
+import pageobjects.LoginPage;
+import pageobjects.LogoutPage;
+import pageobjects.SalespersonPage;
 
 public class Testsalesperson {
 	
@@ -39,31 +43,37 @@ public class Testsalesperson {
 	public void Login(String url, String username, String password) {
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//*[@name='user_name_entry_field']")).sendKeys(username);
-		driver.findElement(By.xpath("//*[@name='password']")).sendKeys(password);
-		driver.findElement(By.xpath("//*[@name='SubmitUser']")).click();
+		LoginPage loginpage=new LoginPage(driver);
+		loginpage.Username().sendKeys(username);
+		loginpage.Password().sendKeys(password);
+		loginpage.Login().click();
 		
 	}
 	
 	@Test(priority=2)
 	public void AddSalesperson() {
-		driver.findElement(By.linkText("Sales")).click();
+		HomePage home=new HomePage(driver);
+		home.Sales().click();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.findElement(By.linkText("Sales Persons")).click();
-		driver.findElement(By.xpath("//*[@name='salesman_name']")).sendKeys("kumar");
-		driver.findElement(By.xpath("//*[@name='salesman_phone']")).sendKeys("990900");
-		driver.findElement(By.xpath("//*[@name='salesman_fax']")).sendKeys("809000");
-		driver.findElement(By.xpath("//*[@name='salesman_email']")).sendKeys("a@g.com");
+		home.Salesperson().click();
+		SalespersonPage salesperson=new SalespersonPage(driver);
+		salesperson.Salesname().sendKeys("kumar");
+		salesperson.Phone().sendKeys("990900");
+		salesperson.Fax().sendKeys("809000");
+		salesperson.Email().sendKeys("a@g.com");
+	
 		Actions action=new Actions(driver);
-		action.doubleClick(driver.findElement(By.xpath("//*[@name='provision']"))).build().perform();
-		driver.findElement(By.xpath("//*[@name='provision']")).sendKeys("3.000");
-		action.doubleClick(driver.findElement(By.xpath("//*[@name='break_pt']"))).build().perform();
-		driver.findElement(By.xpath("//*[@name='break_pt']")).sendKeys("3.000");
-		action.doubleClick(driver.findElement(By.xpath("//*[@name='provision2']"))).build().perform();
-		driver.findElement(By.xpath("//*[@name='provision2']")).sendKeys("3.000");
-		driver.findElement(By.xpath("//*[span='Add new']")).click();
-		driver.findElement(By.linkText("Back")).click();
-		driver.findElement(By.linkText("Logout")).click();
+		action.doubleClick(salesperson.Provision()).build().perform();
+		salesperson.Provision().sendKeys("3.000");
+		action.doubleClick(salesperson.Turnoverbreak()).build().perform();
+		salesperson.Turnoverbreak().sendKeys("3.000");
+		action.doubleClick(salesperson.Provision2()).build().perform();
+		salesperson.Provision2().sendKeys("3.000");
+		salesperson.AddButton().click();
+		salesperson.Back().click();
+
+		LogoutPage logout=new LogoutPage(driver);
+		logout.Logout().click();
 	}
 	
 	@AfterClass

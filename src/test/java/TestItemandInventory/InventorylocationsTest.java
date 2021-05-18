@@ -1,6 +1,5 @@
 package TestItemandInventory;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -11,6 +10,10 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageobjects.HomePage;
+import pageobjects.InventorylocationPage;
+import pageobjects.LoginPage;
+import pageobjects.LogoutPage;
 
 public class InventorylocationsTest {
 	
@@ -35,26 +38,34 @@ public class InventorylocationsTest {
 	@Test(priority=1)
 	public void Login(String url) {
 		driver.get(url);
-		driver.findElement(By.xpath("//*[@name='user_name_entry_field']")).sendKeys("qaplanet1");
-		driver.findElement(By.xpath("//*[@name='password']")).sendKeys("lab1");
-		driver.findElement(By.xpath("//*[@name='SubmitUser']")).click();
+		LoginPage loginpage=new LoginPage(driver);
+		loginpage.Username().sendKeys("qaplanet1");
+		loginpage.Password().sendKeys("lab1");
+		loginpage.Login().click();
+		
 	}
 
 	@Test(priority=2)
 	public void AddInventoryLocation() {
-		driver.findElement(By.linkText("Items and Inventory")).click();
-		driver.findElement(By.linkText("Inventory Locations")).click();
-		driver.findElement(By.xpath("//*[@name='loc_code']")).sendKeys("0012");
-		driver.findElement(By.xpath("//*[@name='location_name']")).sendKeys("moren");
-		driver.findElement(By.xpath("//*[@name='contact']")).sendKeys("john");
-		driver.findElement(By.xpath("//*[@name='delivery_address']")).sendKeys("2nd street mallepally");
-		driver.findElement(By.xpath("//*[@name='phone']")).sendKeys("90770007");
-		driver.findElement(By.xpath("//*[@name='phone2']")).sendKeys("88000900");
-		driver.findElement(By.xpath("//*[@name='fax']")).sendKeys("70000");
-		driver.findElement(By.xpath("//*[@name='email']")).sendKeys("a@g.com");
-		driver.findElement(By.xpath("//*[span='Add new']")).click();
-		driver.findElement(By.linkText("Back")).click();
-		driver.findElement(By.linkText("Logout")).click();
+		HomePage home=new HomePage(driver);
+		home.ItemsandInventory().click();
+		home.AddInventoryLocations().click();
+		
+		InventorylocationPage inventorylocation=new InventorylocationPage(driver);
+		inventorylocation.Locationcode().sendKeys("0012");
+		inventorylocation.LocationName().sendKeys("moren");
+		inventorylocation.Contactfordelivery().sendKeys("john");
+		inventorylocation.Address().sendKeys("2nd street mallepally");
+		inventorylocation.Telephone().sendKeys("90770007");
+		inventorylocation.Secondaryphone().sendKeys("88000900");
+		inventorylocation.Facsimile().sendKeys("70000");
+		inventorylocation.Email().sendKeys("a@g.com");
+		inventorylocation.AddButton().click();
+		inventorylocation.Back().click();
+		
+		
+		LogoutPage logout=new LogoutPage(driver);
+		logout.Logout().click();
 	}
 	
 	@AfterClass
