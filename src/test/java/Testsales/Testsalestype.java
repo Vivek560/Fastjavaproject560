@@ -1,6 +1,5 @@
 package Testsales;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -13,6 +12,8 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageobjects.HomePage;
+import pageobjects.LoginPage;
+import pageobjects.LogoutPage;
 import pageobjects.SalesTypePage;
 
 public class Testsalestype {
@@ -41,11 +42,10 @@ public class Testsalestype {
 	public void Login(String url,String username, String password) throws InterruptedException {
 		
 		driver.get(url);
-		driver.findElement(By.name("user_name_entry_field")).sendKeys(username);
-		driver.findElement(By.name("password")).sendKeys(password);
-		driver.findElement(By.name("SubmitUser")).click();
-		Thread.sleep(5000);
-		
+		LoginPage loginpage=new LoginPage(driver);
+		loginpage.Username().sendKeys(username);
+		loginpage.Password().sendKeys(password);
+		loginpage.Login().click();
 		
 	}
 
@@ -64,8 +64,8 @@ public class Testsalestype {
 		salestype.TaxIncluded().click();
 		salestype.AddButton().click();
 		salestype.Back().click();
-		HomePage page=new HomePage(driver);
-		page.Logout();
+		LogoutPage logout=new LogoutPage(driver);
+		logout.Logout().click();
 	}
 	
 
