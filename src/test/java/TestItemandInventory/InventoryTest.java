@@ -28,7 +28,7 @@ public class InventoryTest {
 	@BeforeClass
 	public void setup(String browser) {
 		
-		if(browser.contains("Chrome")) {
+		if(browser.contains("Chrome")){
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions option=new ChromeOptions();
 		option.addArguments("--start-maximized");

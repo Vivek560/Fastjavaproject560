@@ -1,64 +1,72 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 24, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 99.191 s <<< FAILURE! - in TestSuite
-TestItemandInventory.UnitofmeasureTest.AddUnitofMeasure  Time elapsed: 1.903 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=90.0.4430.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51696}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2deedf31334956674e5894cc60e6eb53
-	at TestItemandInventory.UnitofmeasureTest.AddUnitofMeasure(UnitofmeasureTest.java:77)
+Tests run: 48, Failures: 12, Errors: 0, Skipped: 36, Time elapsed: 1.546 s <<< FAILURE! - in TestSuite
+TestItemandInventory.InventorylocationsTest.setup  Time elapsed: 1.055 s  <<< FAILURE!
+org.testng.TestNGException: 
 
-TestItemandInventory.InventoryTest.TestAddInventoryLocation  Time elapsed: 4.81 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=90.0.4430.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c440cb381d9183021fcda633ad1d0fff
-	at TestItemandInventory.InventoryTest.TestAddInventoryLocation(InventoryTest.java:66)
+Parameter 'Browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in E:\Localrep\Fastjavaproject560\testng.xml
 
-TestItemandInventory.InventoryTest.TestAddUnitofMeasure  Time elapsed: 1.63 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=90.0.4430.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c440cb381d9183021fcda633ad1d0fff
-	at TestItemandInventory.InventoryTest.TestAddUnitofMeasure(InventoryTest.java:128)
+TestItemandInventory.UnitofmeasureTest.setup  Time elapsed: 0.002 s  <<< FAILURE!
+org.testng.TestNGException: 
 
-Testsales.Testsalesperson.AddSalesperson  Time elapsed: 2.743 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=90.0.4430.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 92d09fb15cbf1b1b49c89a773f17f487
-	at Testsales.Testsalesperson.AddSalesperson(Testsalesperson.java:55)
+Parameter 'Browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in E:\Localrep\Fastjavaproject560\testng.xml
 
-BankingandLedger.BankAccountsTest.AddBankAccounts  Time elapsed: 3.016 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=90.0.4430.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51914}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 132a4876cf48aa326a1b7992db0acf9a
-	at BankingandLedger.BankAccountsTest.AddBankAccounts(BankAccountsTest.java:72)
+TestItemandInventory.InventoryTest.setup  Time elapsed: 0.003 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in E:\Localrep\Fastjavaproject560\testng.xml
+
+TestItemandInventory.ItemsTest.Setup  Time elapsed: 0.001 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Browser' is required by BeforeClass on method Setup but has not been marked @Optional or defined
+in E:\Localrep\Fastjavaproject560\testng.xml
+
+Testsales.TestLogin.Launchbrowser  Time elapsed: 0.067 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Browser' is required by @Test on method Launchbrowser but has not been marked @Optional or defined
+in E:\Localrep\Fastjavaproject560\testng.xml
+
+Testsales.TestLogin.Login[qaplanet1, lab1](1)  Time elapsed: 0.008 s  <<< FAILURE!
+java.lang.NullPointerException
+	at Testsales.TestLogin.Login(TestLogin.java:40)
+
+Testsales.TestLogin.Logout  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at Testsales.TestLogin.Logout(TestLogin.java:50)
+
+TestLogin.CredentialsTest.setup  Time elapsed: 0.004 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
+in E:\Localrep\Fastjavaproject560\testng.xml
+
+Testsales.Testsalestype.LaunchBrowser  Time elapsed: 0.002 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Browser' is required by BeforeClass on method LaunchBrowser but has not been marked @Optional or defined
+in E:\Localrep\Fastjavaproject560\testng.xml
+
+Testsales.Testsalesgroup.LaunchBrowser  Time elapsed: 0.002 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Browser' is required by BeforeMethod on method LaunchBrowser but has not been marked @Optional or defined
+in E:\Localrep\Fastjavaproject560\testng.xml
+
+Testsales.Testsalesperson.Setup  Time elapsed: 0.001 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Browser' is required by BeforeClass on method Setup but has not been marked @Optional or defined
+in E:\Localrep\Fastjavaproject560\testng.xml
+
+BankingandLedger.BankAccountsTest.Setup  Time elapsed: 0.043 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Browser' is required by BeforeClass on method Setup but has not been marked @Optional or defined
+in E:\Localrep\Fastjavaproject560\testng.xml
 

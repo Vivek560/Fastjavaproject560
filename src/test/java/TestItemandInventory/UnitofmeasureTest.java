@@ -1,6 +1,8 @@
 package TestItemandInventory;
 
 
+import java.util.concurrent.TimeUnit;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -36,6 +38,7 @@ public class UnitofmeasureTest {
 			driver = new EdgeDriver();
 		}	
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
 		log.debug("The browser is opened and maximized");
 	}
 	
