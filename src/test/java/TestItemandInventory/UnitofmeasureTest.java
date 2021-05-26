@@ -38,13 +38,13 @@ public class UnitofmeasureTest {
 			driver = new EdgeDriver();
 		}	
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
 		log.debug("The browser is opened and maximized");
 	}
 	
 	@Parameters({"URL"})
 	@Test(priority=1)
 	public void login(String url) {
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.get(url);
 		if(driver.getTitle().equals("FrontAccounting 2.4.2 - Login")) {
 			log.info("The title matches");
@@ -64,7 +64,7 @@ public class UnitofmeasureTest {
 
 	@Test(priority=2)
 	public void AddUnitofMeasure() throws InterruptedException {
-		
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		HomePage homepage=new HomePage(driver);
 		homepage.ItemsandInventory().click();
 		log.debug("Items and Inventory is clicked");
