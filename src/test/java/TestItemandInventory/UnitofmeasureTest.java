@@ -79,13 +79,10 @@ public class UnitofmeasureTest {
 		units.AddNewButton().click();
 		units.Back().click();
 		Thread.sleep(2000);
-	}
-	
-	@Test(priority=3)
-	public void Logout() {
 		LogoutPage logout=new LogoutPage(driver);
 		logout.Logout().click();
 	}
+	
 	
 	@AfterClass
 	public void teardown() {
