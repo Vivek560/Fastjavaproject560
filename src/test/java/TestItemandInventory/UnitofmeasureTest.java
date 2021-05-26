@@ -30,7 +30,6 @@ public class UnitofmeasureTest {
 	public void setup(String browser) {
 		if(browser.contains("Chrome")) {
 		WebDriverManager.chromedriver().setup();
-		log = LogManager.getLogger(UnitofmeasureTest.class.getName());
 		driver=new ChromeDriver();
 		}
 		else if(browser.contains("Edge")) {
@@ -38,6 +37,7 @@ public class UnitofmeasureTest {
 			driver = new EdgeDriver();
 		}	
 		driver.manage().window().maximize();
+		log = LogManager.getLogger(UnitofmeasureTest.class.getName());
 		log.debug("The browser is opened and maximized");
 	}
 	
