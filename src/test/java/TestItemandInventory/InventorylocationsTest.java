@@ -1,5 +1,7 @@
 package TestItemandInventory;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -31,6 +33,7 @@ public class InventorylocationsTest {
 		else if(browser.contains("Edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
+			driver.manage().window().maximize();
 		}	
 	}
 	
@@ -47,6 +50,7 @@ public class InventorylocationsTest {
 
 	@Test(priority=2)
 	public void AddInventoryLocation() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		HomePage home=new HomePage(driver);
 		home.ItemsandInventory().click();
 		home.AddInventoryLocations().click();
@@ -62,7 +66,6 @@ public class InventorylocationsTest {
 		inventorylocation.Email().sendKeys("a@g.com");
 		inventorylocation.AddButton().click();
 		inventorylocation.Back().click();
-		
 		
 		LogoutPage logout=new LogoutPage(driver);
 		logout.Logout().click();

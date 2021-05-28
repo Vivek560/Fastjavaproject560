@@ -41,6 +41,7 @@ public class InventoryTest {
 		else if(browser.contains("Edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
+			driver.manage().window().maximize();
 		}	
 		
 	}
@@ -58,6 +59,7 @@ public class InventoryTest {
 
 	@Test(priority=2)
 	public void TestAddInventoryLocation() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.linkText("Items and Inventory")).click();
 		driver.findElement(By.linkText("Inventory Locations")).click();
 		driver.findElement(By.xpath("//*[@name='loc_code']")).sendKeys("0012");
@@ -127,6 +129,7 @@ public class InventoryTest {
 	
 	@Test(priority=4)
 	public void TestAddUnitofMeasure() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.linkText("Items and Inventory")).click();
 		driver.findElement(By.linkText("Units of Measure")).click();
 		driver.findElement(By.xpath("//*[@name='abbr']")).sendKeys("MM");
