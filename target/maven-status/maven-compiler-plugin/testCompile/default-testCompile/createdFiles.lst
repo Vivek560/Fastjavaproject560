@@ -2,11 +2,12 @@ TestItemandInventory\InventorylocationsTest.class
 BankingandLedger\BankAccountsTest.class
 ITLISTENER\ListenersTest.class
 Testsales\Testsalestype.class
-TestItemandInventory\ItemsTest.class
+BankingandLedger\GLAccountTest.class
 TestItemandInventory\InventoryTest.class
 Testsales\TestLogin.class
 TestItemandInventory\AutoITTest.class
-TestLogin\CredentialsTest.class
 Testsales\Testsalesperson.class
-TestItemandInventory\UnitofmeasureTest.class
 Testsales\Testsalesgroup.class
+TestItemandInventory\ItemsTest.class
+TestLogin\CredentialsTest.class
+TestItemandInventory\UnitofmeasureTest.class

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="96.584" tests="24" errors="0" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="90.935" tests="23" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="11"/>
-    <property name="webdriver.chrome.driver" value="C:\Users\C V VIVEK\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.class.path" value="E:\Localrep\Fastjavaproject560\target\test-classes;E:\Localrep\Fastjavaproject560\target\classes;C:\Users\C V VIVEK\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\C V VIVEK\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\C V VIVEK\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\C V VIVEK\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\C V VIVEK\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\C V VIVEK\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\C V VIVEK\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\C V VIVEK\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\C V VIVEK\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\C V VIVEK\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\C V VIVEK\.m2\repository\io\github\bonigarcia\webdrivermanager\4.3.1\webdrivermanager-4.3.1.jar;C:\Users\C V VIVEK\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\C V VIVEK\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\C V VIVEK\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\C V VIVEK\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\C V VIVEK\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\C V VIVEK\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.0\log4j-api-2.13.0.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.0\log4j-core-2.13.0.jar;C:\Users\C V VIVEK\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\C V VIVEK\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\C V VIVEK\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
@@ -13,13 +12,13 @@
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://openjdk.java.net/"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="org.apache.logging.log4j.assignedSequences" value="13653"/>
+    <property name="org.apache.logging.log4j.assignedSequences" value="3634"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="os.name" value="Windows 10"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin"/>
-    <property name="sun.java.command" value="C:\Users\C V VIVEK\AppData\Local\Temp\surefire14434093256040753558\surefirebooter13491523869115117778.jar C:\Users\C V VIVEK\AppData\Local\Temp\surefire14434093256040753558 2021-05-19T16-29-29_801-jvmRun1 surefire17904824999389851633tmp surefire_017684004613793266663tmp"/>
+    <property name="sun.java.command" value="C:\Users\C V VIVEK\AppData\Local\Temp\surefire3609120197631363649\surefirebooter12777442531514087519.jar C:\Users\C V VIVEK\AppData\Local\Temp\surefire3609120197631363649 2021-05-28T18-57-24_545-jvmRun1 surefire15029110104170156860tmp surefire_014458588516093283597tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="E:\Localrep\Fastjavaproject560\target\test-classes;E:\Localrep\Fastjavaproject560\target\classes;C:\Users\C V VIVEK\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\C V VIVEK\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\C V VIVEK\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\C V VIVEK\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\C V VIVEK\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\C V VIVEK\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\C V VIVEK\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\C V VIVEK\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\C V VIVEK\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\C V VIVEK\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\C V VIVEK\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\C V VIVEK\.m2\repository\io\github\bonigarcia\webdrivermanager\4.3.1\webdrivermanager-4.3.1.jar;C:\Users\C V VIVEK\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\C V VIVEK\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\C V VIVEK\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\C V VIVEK\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\C V VIVEK\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\C V VIVEK\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.0\log4j-api-2.13.0.jar;C:\Users\C V VIVEK\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.0\log4j-core-2.13.0.jar;C:\Users\C V VIVEK\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\C V VIVEK\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\C V VIVEK\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -35,17 +34,18 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\C V VIVEK\AppData\Local\Temp\surefire14434093256040753558\surefirebooter13491523869115117778.jar"/>
-    <property name="Browser" value="Chrome"/>
+    <property name="surefire.real.class.path" value="C:\Users\C V VIVEK\AppData\Local\Temp\surefire3609120197631363649\surefirebooter12777442531514087519.jar"/>
+    <property name="Browser" value="Edge"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.8+10-LTS"/>
+    <property name="webdriver.edge.driver" value="C:\Users\C V VIVEK\.cache\selenium\msedgedriver\win64\90.0.818.66\msedgedriver.exe"/>
     <property name="user.name" value="C V VIVEK"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="browser" value="Chrome"/>
+    <property name="browser" value="Edge"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="java.vendor.version" value="18.9"/>
     <property name="localRepository" value="C:\Users\C V VIVEK\.m2\repository"/>
@@ -57,274 +57,235 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\MAVEN\apache-maven-3.6.3/bin;C:\Program Files\Java\jdk-11.0.8/bin;C:\Program Files\Java\jdk-11.0.8/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\GuptaEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DelphiEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\PBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\VBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DotNetHooking;;&quot;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_241\bin;&quot;;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Java\jdk-11.0.8\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-11.0.8\bin;C:\MAVEN\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\C V VIVEK\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\C V VIVEK\AppData\Local\Programs\Python\Python38\;C:\Users\C V VIVEK\AppData\Local\Microsoft\WindowsApps;C:\Users\C V VIVEK\AppData\Roaming\npm;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\GuptaEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DelphiEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\PBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\VBEngine;C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\Classic\dll\DotNetHooking;;&quot;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_241\bin;&quot;;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Java\jdk-11.0.8\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-11.0.8\bin;C:\MAVEN\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\C V VIVEK\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\C V VIVEK\AppData\Local\Programs\Python\Python38\;C:\Users\C V VIVEK\AppData\Local\Microsoft\WindowsApps;C:\Users\C V VIVEK\AppData\Roaming\npm;."/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vm.version" value="11.0.8+10-LTS"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="Login[http://apps.qaplanet.in/erp/index.php](1)" classname="TestItemandInventory.InventorylocationsTest" time="2.207">
+  <testcase name="Login[http://apps.qaplanet.in/erp/index.php](1)" classname="TestItemandInventory.InventorylocationsTest" time="2.346">
     <system-out><![CDATA[The test method execution is started=Login
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 6624
+Starting MSEdgeDriver 90.0.818.66 (5f913625aa6fc53d48c21e7d1fd16b222d2f2aeb) on port 11534
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 19, 2021 4:29:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+May 28, 2021 6:57:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="AddInventoryLocation" classname="TestItemandInventory.InventorylocationsTest" time="2.933">
+  <testcase name="AddInventoryLocation" classname="TestItemandInventory.InventorylocationsTest" time="3.476">
     <system-out><![CDATA[The test method execution is successful=Login
 The test method execution is started=AddInventoryLocation
 ]]></system-out>
   </testcase>
-  <testcase name="login[http://apps.qaplanet.in/erp/index.php](1)" classname="TestItemandInventory.UnitofmeasureTest" time="2.15">
+  <testcase name="login[http://apps.qaplanet.in/erp/index.php](1)" classname="TestItemandInventory.UnitofmeasureTest" time="1.651">
     <system-out><![CDATA[The test method execution is successful=AddInventoryLocation
 The test method execution is started=login
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 39816
+    <system-err><![CDATA[Starting MSEdgeDriver 90.0.818.66 (5f913625aa6fc53d48c21e7d1fd16b222d2f2aeb) on port 1633
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 19, 2021 4:29:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+May 28, 2021 6:57:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="AddUnitofMeasure" classname="TestItemandInventory.UnitofmeasureTest" time="4.897">
+  <testcase name="AddUnitofMeasure" classname="TestItemandInventory.UnitofmeasureTest" time="4.132">
     <system-out><![CDATA[The test method execution is successful=login
 The test method execution is started=AddUnitofMeasure
 ]]></system-out>
   </testcase>
-  <testcase name="Logout" classname="TestItemandInventory.UnitofmeasureTest" time="0.413">
+  <testcase name="TestLogin[http://apps.qaplanet.in/erp/index.php](1)" classname="TestItemandInventory.InventoryTest" time="1.454">
     <system-out><![CDATA[The test method execution is successful=AddUnitofMeasure
-The test method execution is started=Logout
-]]></system-out>
-  </testcase>
-  <testcase name="TestLogin[http://apps.qaplanet.in/erp/index.php](1)" classname="TestItemandInventory.InventoryTest" time="1.593">
-    <system-out><![CDATA[The test method execution is successful=Logout
 The test method execution is started=TestLogin
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 24487
+    <system-err><![CDATA[Starting MSEdgeDriver 90.0.818.66 (5f913625aa6fc53d48c21e7d1fd16b222d2f2aeb) on port 12463
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 19, 2021 4:29:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+May 28, 2021 6:57:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="TestAddInventoryLocation" classname="TestItemandInventory.InventoryTest" time="2.715">
-    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=90.0.4430.212)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-TPUJHBBQ&apos;, ip: &apos;192.168.0.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60006}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 06bcb0855573f6a31296b95621939e27" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=90.0.4430.212)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60006}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 06bcb0855573f6a31296b95621939e27
-	at TestItemandInventory.InventoryTest.TestAddInventoryLocation(InventoryTest.java:72)
-]]></failure>
+  <testcase name="TestAddInventoryLocation" classname="TestItemandInventory.InventoryTest" time="2.035">
     <system-out><![CDATA[The test method execution is successful=TestLogin
 The test method execution is started=TestAddInventoryLocation
 ]]></system-out>
   </testcase>
-  <testcase name="TestAddUnitofMeasure" classname="TestItemandInventory.InventoryTest" time="1.649">
-    <system-out><![CDATA[The test method execution is failed=TestAddInventoryLocation
+  <testcase name="TestAddUnitofMeasure" classname="TestItemandInventory.InventoryTest" time="2.083">
+    <system-out><![CDATA[The test method execution is successful=TestAddInventoryLocation
 The test method execution is started=TestAddUnitofMeasure
 ]]></system-out>
   </testcase>
-  <testcase name="login[http://apps.qaplanet.in/erp/index.php](1)" classname="TestItemandInventory.ItemsTest" time="1.854">
+  <testcase name="login[http://apps.qaplanet.in/erp/index.php](1)" classname="TestItemandInventory.ItemsTest" time="1.627">
     <system-out><![CDATA[The test method execution is successful=TestAddUnitofMeasure
 The test method execution is started=login
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 41426
+    <system-err><![CDATA[Starting MSEdgeDriver 90.0.818.66 (5f913625aa6fc53d48c21e7d1fd16b222d2f2aeb) on port 24780
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 19, 2021 4:29:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+May 28, 2021 6:57:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="AddItem" classname="TestItemandInventory.ItemsTest" time="2.502">
-    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=90.0.4430.212)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-TPUJHBBQ&apos;, ip: &apos;192.168.0.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60023}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f3f79352f4b93e6286056b4329223530&#10;*** Element info: {Using=xpath, value=.//option[@value = &quot;ML&quot;]}" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+  <testcase name="AddItem" classname="TestItemandInventory.ItemsTest" time="2.99">
+    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: MicrosoftEdge=90.0.818.66)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-TPUJHBBQ&apos;, ip: &apos;192.168.0.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 90.0.818.66, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60047}, msedge: {msedgedriverVersion: 90.0.818.66 (5f913625aa6fc5..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6b96ef270be2fa9bc4b3c025337a0b29" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
 stale element reference: element is not attached to the page document
-  (Session info: chrome=90.0.4430.212)
+  (Session info: MicrosoftEdge=90.0.818.66)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60023}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3f79352f4b93e6286056b4329223530
-*** Element info: {Using=xpath, value=.//option[@value = "ML"]}
-	at TestItemandInventory.ItemsTest.AddItem(ItemsTest.java:82)
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 90.0.818.66, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60047}, msedge: {msedgedriverVersion: 90.0.818.66 (5f913625aa6fc5..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b96ef270be2fa9bc4b3c025337a0b29
+	at TestItemandInventory.ItemsTest.AddItem(ItemsTest.java:78)
 ]]></failure>
     <system-out><![CDATA[The test method execution is successful=login
 The test method execution is started=AddItem
 ]]></system-out>
   </testcase>
-  <testcase name="Launchbrowser[Chrome, http://apps.qaplanet.in/erp/index.php](1)" classname="Testsales.TestLogin" time="2.418">
+  <testcase name="Launchbrowser[Edge, http://apps.qaplanet.in/erp/index.php](1)" classname="Testsales.TestLogin" time="2.312">
     <system-out><![CDATA[The test method execution is failed=AddItem
-This is onFinish method=[ResultMap map=[[TestResult name=Logout status=SUCCESS method=UnitofmeasureTest.Logout()[pri:3, instance:TestItemandInventory.UnitofmeasureTest@4e096385] output={null}], [TestResult name=TestLogin status=SUCCESS method=InventoryTest.TestLogin(java.lang.String)[pri:1, instance:TestItemandInventory.InventoryTest@34f5090e] output={null}], [TestResult name=TestAddUnitofMeasure status=SUCCESS method=InventoryTest.TestAddUnitofMeasure()[pri:4, instance:TestItemandInventory.InventoryTest@34f5090e] output={null}], [TestResult name=Login status=SUCCESS method=InventorylocationsTest.Login(java.lang.String)[pri:1, instance:TestItemandInventory.InventorylocationsTest@cad498c] output={null}], [TestResult name=login status=SUCCESS method=ItemsTest.login(java.lang.String)[pri:1, instance:TestItemandInventory.ItemsTest@31e5415e] output={null}], [TestResult name=AddUnitofMeasure status=SUCCESS method=UnitofmeasureTest.AddUnitofMeasure()[pri:2, instance:TestItemandInventory.UnitofmeasureTest@4e096385] output={null}], [TestResult name=login status=SUCCESS method=UnitofmeasureTest.login(java.lang.String)[pri:1, instance:TestItemandInventory.UnitofmeasureTest@4e096385] output={null}], [TestResult name=AddInventoryLocation status=SUCCESS method=InventorylocationsTest.AddInventoryLocation()[pri:2, instance:TestItemandInventory.InventorylocationsTest@cad498c] output={null}]]]
-This is onFinish method=[ResultMap map=[[TestResult name=AddItem status=FAILURE method=ItemsTest.AddItem()[pri:2, instance:TestItemandInventory.ItemsTest@31e5415e] output={null}], [TestResult name=TestAddInventoryLocation status=FAILURE method=InventoryTest.TestAddInventoryLocation()[pri:2, instance:TestItemandInventory.InventoryTest@34f5090e] output={null}]]]
+This is onFinish method=[ResultMap map=[[TestResult name=AddUnitofMeasure status=SUCCESS method=UnitofmeasureTest.AddUnitofMeasure()[pri:2, instance:TestItemandInventory.UnitofmeasureTest@27ff5d15] output={null}], [TestResult name=TestAddUnitofMeasure status=SUCCESS method=InventoryTest.TestAddUnitofMeasure()[pri:4, instance:TestItemandInventory.InventoryTest@693fe6c9] output={null}], [TestResult name=TestAddInventoryLocation status=SUCCESS method=InventoryTest.TestAddInventoryLocation()[pri:2, instance:TestItemandInventory.InventoryTest@693fe6c9] output={null}], [TestResult name=Login status=SUCCESS method=InventorylocationsTest.Login(java.lang.String)[pri:1, instance:TestItemandInventory.InventorylocationsTest@66498326] output={null}], [TestResult name=AddInventoryLocation status=SUCCESS method=InventorylocationsTest.AddInventoryLocation()[pri:2, instance:TestItemandInventory.InventorylocationsTest@66498326] output={null}], [TestResult name=TestLogin status=SUCCESS method=InventoryTest.TestLogin(java.lang.String)[pri:1, instance:TestItemandInventory.InventoryTest@693fe6c9] output={null}], [TestResult name=login status=SUCCESS method=UnitofmeasureTest.login(java.lang.String)[pri:1, instance:TestItemandInventory.UnitofmeasureTest@27ff5d15] output={null}], [TestResult name=login status=SUCCESS method=ItemsTest.login(java.lang.String)[pri:1, instance:TestItemandInventory.ItemsTest@34f5090e] output={null}]]]
+This is onFinish method=[ResultMap map=[[TestResult name=AddItem status=FAILURE method=ItemsTest.AddItem()[pri:2, instance:TestItemandInventory.ItemsTest@34f5090e] output={null}]]]
 The test method execution is started=Launchbrowser
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 9503
+    <system-err><![CDATA[Starting MSEdgeDriver 90.0.818.66 (5f913625aa6fc53d48c21e7d1fd16b222d2f2aeb) on port 33968
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 19, 2021 4:30:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+May 28, 2021 6:58:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Login[qaplanet1, lab1](1)" classname="Testsales.TestLogin" time="1.092">
+  <testcase name="Login[qaplanet1, lab1](1)" classname="Testsales.TestLogin" time="0.965">
     <system-out><![CDATA[The test method execution is successful=Launchbrowser
 The test method execution is started=Login
 ]]></system-out>
   </testcase>
-  <testcase name="Logout" classname="Testsales.TestLogin" time="0.104">
+  <testcase name="Logout" classname="Testsales.TestLogin" time="0.11">
     <system-out><![CDATA[The test method execution is successful=Login
 The test method execution is started=Logout
 ]]></system-out>
   </testcase>
-  <testcase name="TestvalidateLogin[qaplanet1, lab1](1)" classname="TestLogin.CredentialsTest" time="1.842">
+  <testcase name="TestvalidateLogin[qaplanet1, lab1](1)" classname="TestLogin.CredentialsTest" time="1.596">
     <system-out><![CDATA[The test method execution is successful=Logout
 The test method execution is started=TestvalidateLogin
 Invalid credentials
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 15909
+    <system-err><![CDATA[Starting MSEdgeDriver 90.0.818.66 (5f913625aa6fc53d48c21e7d1fd16b222d2f2aeb) on port 49062
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 19, 2021 4:30:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+May 28, 2021 6:58:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="TestvalidateLogin[qaplanet, lab1](2)" classname="TestLogin.CredentialsTest" time="3.426">
+  <testcase name="TestvalidateLogin[qaplanet, lab1](2)" classname="TestLogin.CredentialsTest" time="1.204">
     <system-out><![CDATA[The test method execution is successful=TestvalidateLogin
 The test method execution is started=TestvalidateLogin
 Invalid credentials
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 40891
+    <system-err><![CDATA[Starting MSEdgeDriver 90.0.818.66 (5f913625aa6fc53d48c21e7d1fd16b222d2f2aeb) on port 42987
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 19, 2021 4:30:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+May 28, 2021 6:58:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="TestvalidateLogin[qaplanet1, lab](3)" classname="TestLogin.CredentialsTest" time="1.444">
+  <testcase name="TestvalidateLogin[qaplanet1, lab](3)" classname="TestLogin.CredentialsTest" time="1.226">
     <system-out><![CDATA[The test method execution is successful=TestvalidateLogin
 The test method execution is started=TestvalidateLogin
 Invalid credentials
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 33696
+    <system-err><![CDATA[Starting MSEdgeDriver 90.0.818.66 (5f913625aa6fc53d48c21e7d1fd16b222d2f2aeb) on port 31829
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 19, 2021 4:30:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+May 28, 2021 6:58:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Login[http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1](1)" classname="Testsales.Testsalestype" time="2.066">
+  <testcase name="Login[http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1](1)" classname="Testsales.Testsalestype" time="1.53">
     <system-out><![CDATA[The test method execution is successful=TestvalidateLogin
 The test method execution is started=Login
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 39195
+    <system-err><![CDATA[Starting MSEdgeDriver 90.0.818.66 (5f913625aa6fc53d48c21e7d1fd16b222d2f2aeb) on port 37469
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 19, 2021 4:30:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+May 28, 2021 6:58:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="AddSalestype" classname="Testsales.Testsalestype" time="1.892">
-    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=90.0.4430.212)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-TPUJHBBQ&apos;, ip: &apos;192.168.0.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2dbec889a5d3f48a0b1fdb5d47421169" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=90.0.4430.212)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2dbec889a5d3f48a0b1fdb5d47421169
-	at Testsales.Testsalestype.AddSalestype(Testsalestype.java:66)
-]]></failure>
+  <testcase name="AddSalestype" classname="Testsales.Testsalestype" time="2.074">
     <system-out><![CDATA[The test method execution is successful=Login
 The test method execution is started=AddSalestype
 ]]></system-out>
   </testcase>
-  <testcase name="Login[http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1](1)" classname="Testsales.Testsalesgroup" time="12.739">
-    <system-out><![CDATA[The test method execution is failed=AddSalestype
+  <testcase name="Login[http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1](1)" classname="Testsales.Testsalesgroup" time="12.01">
+    <system-out><![CDATA[The test method execution is successful=AddSalestype
 The test method execution is started=Login
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 30394
+    <system-err><![CDATA[Starting MSEdgeDriver 90.0.818.66 (5f913625aa6fc53d48c21e7d1fd16b222d2f2aeb) on port 7471
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 19, 2021 4:30:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+May 28, 2021 6:58:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="AddSalesgroup[http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1](1)" classname="Testsales.Testsalesgroup" time="9.09">
+  <testcase name="AddSalesgroup[http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1](1)" classname="Testsales.Testsalesgroup" time="10.981">
     <system-out><![CDATA[The test method execution is successful=Login
 The test method execution is started=AddSalesgroup
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 32762
+    <system-err><![CDATA[Starting MSEdgeDriver 90.0.818.66 (5f913625aa6fc53d48c21e7d1fd16b222d2f2aeb) on port 27912
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 19, 2021 4:30:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+May 28, 2021 6:58:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Login[http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1](1)" classname="Testsales.Testsalesperson" time="2.053">
+  <testcase name="Login[http://apps.qaplanet.in/erp/index.php, qaplanet1, lab1](1)" classname="Testsales.Testsalesperson" time="1.576">
     <system-out><![CDATA[The test method execution is successful=AddSalesgroup
 The test method execution is started=Login
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 9092
+    <system-err><![CDATA[Starting MSEdgeDriver 90.0.818.66 (5f913625aa6fc53d48c21e7d1fd16b222d2f2aeb) on port 45304
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 19, 2021 4:30:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+May 28, 2021 6:58:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="AddSalesperson" classname="Testsales.Testsalesperson" time="2.321">
+  <testcase name="AddSalesperson" classname="Testsales.Testsalesperson" time="3.005">
     <system-out><![CDATA[The test method execution is successful=Login
 The test method execution is started=AddSalesperson
 ]]></system-out>
   </testcase>
-  <testcase name="login" classname="BankingandLedger.BankAccountsTest" time="2.02">
+  <testcase name="login" classname="BankingandLedger.BankAccountsTest" time="1.416">
     <system-out><![CDATA[The test method execution is successful=AddSalesperson
-This is onFinish method=[ResultMap map=[[TestResult name=Login status=SUCCESS method=Testsalesgroup.Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalesgroup@53fdffa1] output={null}], [TestResult name=Logout status=SUCCESS method=TestLogin.Logout()[pri:3, instance:Testsales.TestLogin@71def8f8] output={null}], [TestResult name=AddSalesperson status=SUCCESS method=Testsalesperson.AddSalesperson()[pri:2, instance:Testsales.Testsalesperson@5562c41e] output={null}], [TestResult name=TestvalidateLogin status=SUCCESS method=CredentialsTest.TestvalidateLogin(java.lang.String,java.lang.String)[pri:0, instance:TestLogin.CredentialsTest@383bfa16] output={null}], [TestResult name=Launchbrowser status=SUCCESS method=TestLogin.Launchbrowser(java.lang.String,java.lang.String)[pri:1, instance:Testsales.TestLogin@71def8f8] output={null}], [TestResult name=TestvalidateLogin status=SUCCESS method=CredentialsTest.TestvalidateLogin(java.lang.String,java.lang.String)[pri:0, instance:TestLogin.CredentialsTest@383bfa16] output={null}], [TestResult name=Login status=SUCCESS method=TestLogin.Login(java.lang.String,java.lang.String)[pri:2, instance:Testsales.TestLogin@71def8f8] output={null}], [TestResult name=TestvalidateLogin status=SUCCESS method=CredentialsTest.TestvalidateLogin(java.lang.String,java.lang.String)[pri:0, instance:TestLogin.CredentialsTest@383bfa16] output={null}], [TestResult name=Login status=SUCCESS method=Testsalestype.Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalestype@4d465b11] output={null}], [TestResult name=AddSalesgroup status=SUCCESS method=Testsalesgroup.AddSalesgroup(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:Testsales.Testsalesgroup@53fdffa1] output={null}], [TestResult name=Login status=SUCCESS method=Testsalesperson.Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalesperson@5562c41e] output={null}]]]
-This is onFinish method=[ResultMap map=[[TestResult name=AddSalestype status=FAILURE method=Testsalestype.AddSalestype()[pri:2, instance:Testsales.Testsalestype@4d465b11] output={null}]]]
+This is onFinish method=[ResultMap map=[[TestResult name=Login status=SUCCESS method=TestLogin.Login(java.lang.String,java.lang.String)[pri:2, instance:Testsales.TestLogin@383bfa16] output={null}], [TestResult name=AddSalesperson status=SUCCESS method=Testsalesperson.AddSalesperson()[pri:2, instance:Testsales.Testsalesperson@32ee6fee] output={null}], [TestResult name=Login status=SUCCESS method=Testsalesgroup.Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalesgroup@5562c41e] output={null}], [TestResult name=TestvalidateLogin status=SUCCESS method=CredentialsTest.TestvalidateLogin(java.lang.String,java.lang.String)[pri:0, instance:TestLogin.CredentialsTest@4d465b11] output={null}], [TestResult name=TestvalidateLogin status=SUCCESS method=CredentialsTest.TestvalidateLogin(java.lang.String,java.lang.String)[pri:0, instance:TestLogin.CredentialsTest@4d465b11] output={null}], [TestResult name=AddSalestype status=SUCCESS method=Testsalestype.AddSalestype()[pri:2, instance:Testsales.Testsalestype@53fdffa1] output={null}], [TestResult name=Launchbrowser status=SUCCESS method=TestLogin.Launchbrowser(java.lang.String,java.lang.String)[pri:1, instance:Testsales.TestLogin@383bfa16] output={null}], [TestResult name=Logout status=SUCCESS method=TestLogin.Logout()[pri:3, instance:Testsales.TestLogin@383bfa16] output={null}], [TestResult name=AddSalesgroup status=SUCCESS method=Testsalesgroup.AddSalesgroup(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:Testsales.Testsalesgroup@5562c41e] output={null}], [TestResult name=Login status=SUCCESS method=Testsalesperson.Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalesperson@32ee6fee] output={null}], [TestResult name=TestvalidateLogin status=SUCCESS method=CredentialsTest.TestvalidateLogin(java.lang.String,java.lang.String)[pri:0, instance:TestLogin.CredentialsTest@4d465b11] output={null}], [TestResult name=Login status=SUCCESS method=Testsalestype.Login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Testsales.Testsalestype@53fdffa1] output={null}]]]
+This is onFinish method=[ResultMap map=[]]
 The test method execution is started=login
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 45731
+    <system-err><![CDATA[Starting MSEdgeDriver 90.0.818.66 (5f913625aa6fc53d48c21e7d1fd16b222d2f2aeb) on port 6769
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-May 19, 2021 4:31:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+May 28, 2021 6:58:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="AddBankAccounts" classname="BankingandLedger.BankAccountsTest" time="3.21">
-    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=90.0.4430.212)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-TPUJHBBQ&apos;, ip: &apos;192.168.0.178&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4bd521c1fff5f1b0198148217caa21fe" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=90.0.4430.212)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-TPUJHBBQ', ip: '192.168.0.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\CVVIVE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4bd521c1fff5f1b0198148217caa21fe
-	at BankingandLedger.BankAccountsTest.AddBankAccounts(BankAccountsTest.java:72)
-]]></failure>
+  <testcase name="AddBankAccounts" classname="BankingandLedger.BankAccountsTest" time="2.678">
     <system-out><![CDATA[The test method execution is successful=login
 The test method execution is started=AddBankAccounts
 ]]></system-out>

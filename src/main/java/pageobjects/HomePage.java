@@ -13,6 +13,7 @@ public class HomePage {
 	}
 	
 	private By bankingandLedgerlink = By.linkText("Banking and General Ledger");
+	private By glaccount = By.linkText("GL Accounts");
 	private By sales = By.linkText("Sales");
 	private By salesperson=By.linkText("Sales Persons");
 	private By itemsandinventory=By.linkText("Items and Inventory");
@@ -53,6 +54,10 @@ public class HomePage {
 
 	public WebElement BankAccounts() {
 		return driver.findElement(bankaccount);
+	}
+	
+	public WebElement GLAccount() {
+		return driver.findElement(glaccount);
 	}
 	
 	public WebElement SalesType() {

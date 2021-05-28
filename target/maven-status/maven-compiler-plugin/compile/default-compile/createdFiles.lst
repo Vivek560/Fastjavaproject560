@@ -1,4 +1,5 @@
 pageobjects\HomePage.class
+pageobjects\GLAccountPage.class
 pageobjects\BankAccountsPage.class
 pageobjects\LogoutPage.class
 pageobjects\UnitsMeasurePage.class
