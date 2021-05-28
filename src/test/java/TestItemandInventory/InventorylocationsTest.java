@@ -66,7 +66,6 @@ public class InventorylocationsTest {
 		inventorylocation.Email().sendKeys("a@g.com");
 		inventorylocation.AddButton().click();
 		inventorylocation.Back().click();
-		
 		LogoutPage logout=new LogoutPage(driver);
 		logout.Logout().click();
 	}

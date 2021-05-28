@@ -102,6 +102,7 @@ public class ItemsTest {
 		items.InsertNewItem().click();
 		items.Back().click();
 		
+		Thread.sleep(2000);
 		LogoutPage logout=new LogoutPage(driver);
 		logout.Logout().click();
 	}

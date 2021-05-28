@@ -124,7 +124,7 @@ public class InventoryTest {
 		
 		items.InsertNewItem().click();
 		items.Back().click();
-		
+		Thread.sleep(2000);
 	}
 	
 	@Test(priority=4)
