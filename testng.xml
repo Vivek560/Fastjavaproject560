@@ -29,6 +29,7 @@
 	<test thread-count="5" name="BankingandLedger">
 		<classes>
 			<class name="BankingandLedger.BankAccountsTest" />
+			<class name="BankingandLedger.GLAccountTest" />
 		</classes>
 	</test><!-- Test -->
 </suite> <!-- Suite -->
