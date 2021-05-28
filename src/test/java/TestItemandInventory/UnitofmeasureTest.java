@@ -78,7 +78,6 @@ public class UnitofmeasureTest {
 		Decimaldropdown.selectByValue("1");
 		units.AddNewButton().click();
 		units.Back().click();
-		Thread.sleep(2000);
 		LogoutPage logout=new LogoutPage(driver);
 		logout.Logout().click();
 	}

@@ -25,8 +25,7 @@ public class GLAccountTest {
 	@Parameters("Browser")
 	@BeforeClass
 	public void setup(String browser) {
-		WebDriverManager.chromedriver().setup();
-		driver=new ChromeDriver();
+
 		if(browser.contains("Chrome")) {
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
