@@ -17,6 +17,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import pageobjects.GLAccountPage;
 import pageobjects.HomePage;
 import pageobjects.LoginPage;
+import pageobjects.LogoutPage;
 
 public class GLAccountTest {
 
@@ -86,6 +87,12 @@ public class GLAccountTest {
 	
 	}
 	
+	@Test(priority=3)
+	public void logout() {
+	driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	LogoutPage logout=new LogoutPage(driver);
+	logout.Logout().click();
+	}
 	
 	@AfterClass
 	public void teardown() {
